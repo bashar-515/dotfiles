@@ -1,3 +1,7 @@
+import = [
+    "~/.config/alacritty/alacritty-theme/themes/falcon.toml"
+]
+
 [shell]
     program = "/opt/homebrew/bin/bash"
 
