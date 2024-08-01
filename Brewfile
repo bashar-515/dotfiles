@@ -4,6 +4,8 @@ cask_args appdir: "~/Applications"
 # 'brew install'
 brew "bash"
 brew "stow"
+brew "eza"
+brew "zoxide"
 
 # 'brew install --cask'
 cask "alacritty"
