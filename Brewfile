@@ -9,6 +9,7 @@ brew "zoxide"
 brew "tmux"
 brew "bat"
 brew "starship"
+brew "fastfetch"
 
 # 'brew install --cask'
 cask "alacritty"
