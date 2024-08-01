@@ -90,6 +90,7 @@ stow git
 stow ssh
 stow zsh
 stow tmux
+stow starship
 ```
 
 That concludes the initalization from within the Mac Terminal. The next steps are more fun to do in Alacritty!
