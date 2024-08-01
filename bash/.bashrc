@@ -5,3 +5,5 @@ eval "$(zoxide init bash)"
 eval "$(starship init bash)"
 
 fastfetch
+
+. ~/.bash_aliases
