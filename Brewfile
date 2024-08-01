@@ -10,6 +10,7 @@ brew "tmux"
 brew "bat"
 brew "starship"
 brew "fastfetch"
+brew "neovim"
 
 # 'brew install --cask'
 cask "alacritty"
