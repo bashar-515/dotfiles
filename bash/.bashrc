@@ -6,4 +6,5 @@ eval "$(starship init bash)"
 
 fastfetch
 
-. ~/.bash_aliases
+# aliases
+alias nv="nvim"
