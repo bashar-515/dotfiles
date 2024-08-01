@@ -12,6 +12,7 @@ brew "starship"
 brew "fastfetch"
 brew "neovim"
 brew "tree"
+brew "ripgrep"
 
 # 'brew install --cask'
 cask "alacritty"
