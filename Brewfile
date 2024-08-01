@@ -6,6 +6,7 @@ brew "bash"
 brew "stow"
 brew "eza"
 brew "zoxide"
+brew "tmux"
 
 # 'brew install --cask'
 cask "alacritty"
