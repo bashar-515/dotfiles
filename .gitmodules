@@ -1,3 +1,6 @@
 [submodule "alacritty/.config/alacritty/alacritty-theme"]
 	path = alacritty/.config/alacritty/alacritty-theme
 	url = https://github.com/alacritty/alacritty-theme.git
+[submodule "tmux/.tmux/plugins/tpm"]
+	path = tmux/.tmux/plugins/tpm
+	url = git@github.com:tmux-plugins/tpm.git

@@ -23,3 +23,6 @@ import = [
     normal.family = "AnonymicePro Nerd Font Mono"
 
     size = 15
+
+[colors]
+    transparent_background_colors = true
