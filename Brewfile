@@ -11,6 +11,7 @@ brew "bat"
 brew "starship"
 brew "fastfetch"
 brew "neovim"
+brew "tree"
 
 # 'brew install --cask'
 cask "alacritty"
