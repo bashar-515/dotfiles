@@ -8,6 +8,7 @@ brew "eza"
 brew "zoxide"
 brew "tmux"
 brew "bat"
+brew "starship"
 
 # 'brew install --cask'
 cask "alacritty"
