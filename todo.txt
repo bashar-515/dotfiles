@@ -3,3 +3,4 @@
 3. Configure tmux
 4. figure out bash-completion
 5. configure Mac settings :(
+6. Raycast
