@@ -55,7 +55,7 @@ Install [Homebrew](https://brew.sh).
 Add Homebrew to your PATH.
 
 ```bash
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/bae/.zprofile
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile
 ```
 
 ```bash
