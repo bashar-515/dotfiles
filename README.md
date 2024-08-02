@@ -65,7 +65,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 Clone this repository. CD into it.
 
 ```bash
-git clone git@github.com:bashar-515/dotfiles.git
+git clone --recurse-submodules git@github.com:bashar-515/dotfiles.git
 ```
 
 ```bash
