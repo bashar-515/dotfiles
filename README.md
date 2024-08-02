@@ -98,3 +98,22 @@ stow nvim
 That concludes the initalization from within the Mac Terminal. The next steps are more fun to do in Alacritty!
 
 ### The Fun Stuff (Alacritty! Neovim! Tmux!)
+
+No instructions yet.
+
+### OS Settings
+
+Some desired settings can be set by simply running the the .macos script in this repository after giving it the right permissions.
+
+```bash
+chmod u+x .macos
+```
+
+```bash
+./.macos
+```
+
+The settings that follow must be changed manually through a GUI (like the computers system settings).
+
+1. Navigate desktops using CTRL+DesktopNumber: System Settings -> Keyboards -> Keyboard Shortcuts -> Mission Control -> "check" the Mission Control option
+2. Stop automatically rearranging desktops: System Settings -> Desktop & Dock -> turn off "Automatically rearrange Spaces based on most recent use"

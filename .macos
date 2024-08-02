@@ -2,3 +2,7 @@
 
 # Map Caps Lock key to CTRL
 hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x7000000e0}]}'
+# Undo
+# hidutil property --set '{"UserKeyMapping":[]}'
+
+
