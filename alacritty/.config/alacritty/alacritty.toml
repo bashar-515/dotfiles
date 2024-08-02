@@ -4,7 +4,6 @@ import = [
 
 [shell]
     program = "/opt/homebrew/bin/tmux"
-    args = ["new", "-A", "-s", "me"]
 
 [env]
     TERM = "xterm-256color"
