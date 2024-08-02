@@ -144,7 +144,7 @@ That concludes the initalization from within the Mac Terminal. The next steps ar
 
 ### The Fun Stuff (Alacritty! Neovim! Tmux!)
 
-No instructions required. Nvim and Alacritty should configure themselves upon launch. I am having some troubles with tmux right now, though..
+No instructions required. Nvim and Alacritty should configure upon launch and be ready for use. Tmux has been giving me some trouble. Before launching Alacritty, exit the current Mac Terminal session. Open a new shell- still using the Mac Terminal. I think you have to manually install tmux packages here. Once that's done, you can uncomment the colorscheme line in .tmux.conf. Only then will Alacritty work exactly as expected.
 
 ### OS Settings
 
