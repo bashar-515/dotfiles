@@ -1,5 +1,5 @@
 import = [
-    "~/.config/alacritty/alacritty-theme/themes/falcon.toml"
+    "~/.config/alacritty/alacritty-theme/themes/dracula.toml"
 ]
 
 [shell]
@@ -14,7 +14,7 @@ import = [
 
     decorations = "Buttonless"
 
-    opacity = 0.65
+    opacity = 0.88
     blur = false
 
     # option_as_alt = "Both"
