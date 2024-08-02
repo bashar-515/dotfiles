@@ -1,1 +1,7 @@
 Brewfile.lock.json
+
+# tmux plugins EXCEPT tpm
+**/tmux-continuum/
+**/tmux-resurrect/
+**/tmux/
+**/vim-tmux-navigator/
