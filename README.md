@@ -62,16 +62,24 @@ Add Homebrew to your PATH.
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-Clone this repository.
+Clone this repository. CD into it.
 
 ```bash
 git clone git@github.com:bashar-515/dotfiles.git
 ```
 
-Install the desired Homebrew packages.
+```bash
+cd dotfiles
+```
+
+Install the desired Homebrew packages, and then return to HOME.
 
 ```bash
 brew bundle
+```
+
+```bash
+cd ~
 ```
 
 Remove the .zprofile file created when adding Homebrew to PATH from your home directory.
@@ -90,7 +98,11 @@ mv .gitconfig dotfiles/git/.gitconfig
 mv .ssh dotfiles/ssh/
 ```
 
-Now, it's finally time to stow our configuration and dot files!
+Now, it's finally time to stow our configuration and dot files! CD back into this directory and stow away.
+
+```bash
+cd dotfiles
+```
 
 ```bash
 stow alacritty
@@ -132,7 +144,7 @@ That concludes the initalization from within the Mac Terminal. The next steps ar
 
 ### The Fun Stuff (Alacritty! Neovim! Tmux!)
 
-No instructions yet.
+No instructions required. Nvim and Alacritty should configure themselves upon launch. I am having some troubles with tmux right now, though..
 
 ### OS Settings
 
