@@ -118,5 +118,3 @@ The settings that follow must be changed manually through a GUI (like the comput
 1. Navigate desktops using CTRL+DesktopNumber: System Settings -> Keyboard -> Keyboard Shortcuts -> Mission Control -> "check" the Mission Control option
 2. Stop automatically rearranging desktops: System Settings -> Desktop & Dock -> turn off "Automatically rearrange Spaces based on most recent use"
 3. Turn dock hiding off: System Settings -> Keyboard -> Keyboard Shortcuts -> Launchpad & Dock -> uncheck "Turn Dock hiding on/off"
-
-Once step 3 is completed, Rectangle's settings can be imported from RectangleConfig.json.
