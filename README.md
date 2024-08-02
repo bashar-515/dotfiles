@@ -165,3 +165,5 @@ The settings that follow must be changed manually through a GUI (like the comput
 3. Turn dock hiding off: System Settings -> Keyboard -> Keyboard Shortcuts -> Launchpad & Dock -> uncheck "Turn Dock hiding on/off"
 
 Once step 3 is completed, Rectangle's settings can be imported from RectangleConfig.json.
+
+4. Swap control and Caps Lock keys: System Settings -> Keybaord -> Keyboard Shortcuts -> Modifier Keys -> Swap Control and Caps Lock from their respective dropdown menus
