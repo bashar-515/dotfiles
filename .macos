@@ -1,8 +1,2 @@
 #!/opt/homebrew/bin/bash
 
-# Map Caps Lock key to CTRL
-hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x7000000e0}, {"HIDKeyboardModifierMappingSrc":0x7000000e0, "HIDKeyboardModifierMappingDst":0x700000039}]}'
-# undo
-# hidutil property --set '{"UserKeyMapping":[]}'
-
-
