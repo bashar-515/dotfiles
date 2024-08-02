@@ -16,6 +16,9 @@ Globally set Git configuration values.
 
 ```bash
 git config --global user.name "First Last"
+```
+
+```bash
 git config --global user.email me@example.com
 ```
 
@@ -53,6 +56,9 @@ Add Homebrew to your PATH.
 
 ```bash
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/bae/.zprofile
+```
+
+```bash
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
@@ -78,6 +84,9 @@ Move the .ssh directory and .gitconfig file into the dotfiles repository.
 
 ```bash
 mv .gitconfig dotfiles/git/.gitconfig
+```
+
+```bash
 mv .ssh dotfiles/ssh/
 ```
 
@@ -85,13 +94,37 @@ Now, it's finally time to stow our configuration and dot files!
 
 ```bash
 stow alacritty
+```
+
+```bash
 stow bash
+```
+
+```bash
 stow git
+```
+
+```bash
 stow ssh
+```
+
+```bash
 stow zsh
+```
+
+```bash
 stow tmux
+```
+
+```bash
 stow starship
+```
+
+```bash
 stow fastfetch
+```
+
+```bash
 stow nvim
 ```
 
