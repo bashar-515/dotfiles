@@ -2,8 +2,8 @@
 palette = "dracula"
 
 format = '''
-[┌──](white)[\[](bold white) $username@$hostname $directory [\]](bold white)$git_branch$git_state$git_status$fill$cmd_duration [\[](bold white) $time [\]](bold white)
-[└─](white)$character'''
+[┌──](bold white)$username@$hostname $directory$git_branch$git_state$git_status$fill$cmd_duration [\[](bold white) $time [\]](bold white)
+[└─](bold white)$character'''
 
 [username]
 format = "[$user]($style)"
@@ -20,7 +20,6 @@ disabled = false
 
 [directory]
 # note: root git repo is no longer truncated when fish_style_pwd_dir_length is active
-# note: for some reason a space appears after the directory when I'm in root of git repo
 format = "[$path]($style)"
 style = "purple"
 truncation_length = 3
@@ -36,9 +35,10 @@ error_symbol = '[\$](red)'
 vimcmd_symbol = '[\$](purple)'
 
 [git_branch]
+# note: when I'm in a git repository, a space automatically shows up at the end of the directory until the fish prompt is activated
 disabled = false
 symbol = ''
-format = " [$symbol](pink) [$branch]($style)"
+format = "on [$branch]($style)"
 style = "cyan"
 
 [git_status]
