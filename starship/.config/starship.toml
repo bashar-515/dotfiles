@@ -2,7 +2,7 @@
 palette = "dracula"
 
 format = '''
-[┌──](bold white)$username@$hostname $directory$git_branch$git_state$git_status$fill$cmd_duration [\[](bold white) $time [\]](bold white)
+[┌──](bold white)$username@$hostname $directory$git_branch$git_state$git_status$fill$cmd_duration [\[](bold white)$time[\]](bold white)
 [└─](bold white)$character'''
 
 [username]
