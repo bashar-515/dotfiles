@@ -44,6 +44,7 @@ style = "cyan"
 [git_status]
 disabled = false
 style = "pink"
+modified = "*"
 
 [cmd_duration]
 format = " [$duration]($style)"
