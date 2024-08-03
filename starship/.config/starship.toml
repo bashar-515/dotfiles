@@ -43,15 +43,7 @@ style = "cyan"
 
 [git_status]
 disabled = false
-format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
-style = "cyan"
-conflicted = "​"
-untracked = "​"
-modified = "​"
-staged = "​"
-renamed = "​"
-deleted = "​"
-stashed = "≡"
+style = "pink"
 
 [cmd_duration]
 format = " [$duration]($style)"
