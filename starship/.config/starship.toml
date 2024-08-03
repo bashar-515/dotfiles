@@ -1,29 +1,48 @@
 # Use the color palette
 palette = "dracula"
 
-format = """
-$username\
-$hostname\
-$directory\
-$git_branch\
-$git_state\
-$git_status\
-$cmd_duration\
-$character"""
+format = '''
+[┌──]()\[$username@$hostname $directory\]$git_branch$git_state$git_status$fill$cmd_duration \[$time\]
+[└─]()$character'''
+
+[username]
+format = "[$user]($style)"
+style_root = "bold orange"
+style_user = "bold orange"
+show_always = true
+disabled = false
+
+[hostname]
+format = "[$hostname]($style)"
+style = "bold orange"
+ssh_only = false
+disabled = false
 
 [directory]
-style = "bold yellow"
+# note: root git repo is no longer truncated when fish_style_pwd_dir_length is active
+# note: for some reason a space appears after the directory when I'm in root of git repo
+format = "[$path]($style)"
+style = "purple"
+truncation_length = 3
+truncation_symbol = ".../"
+disabled = false
+repo_root_style = "underline purple"
+fish_style_pwd_dir_length = 1
 
 [character]
-success_symbol = "[❯](green)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](purple)"
+# another option (to copy) ❯
+success_symbol = '[\$](green)'
+error_symbol = '[\$](red)'
+vimcmd_symbol = '[\$](purple)'
 
 [git_branch]
-format = "[$branch]($style)"
+disabled = false
+symbol = ''
+format = " [$symbol](white) [$branch]($style)"
 style = "cyan"
 
 [git_status]
+disabled = false
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
 style = "cyan"
 conflicted = "​"
@@ -34,13 +53,22 @@ renamed = "​"
 deleted = "​"
 stashed = "≡"
 
-[git_state]
-format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bright-black"
-
 [cmd_duration]
-format = "[$duration]($style) "
-style = "yellow"
+format = " [$duration]($style)"
+style = "yellow bold"
+min_time = 0
+show_milliseconds = false
+
+[time]
+format = "[$time]($style)"
+style = "dimmed white"
+use_12hr = true
+disabled = false
+
+[fill]
+# symbol = "—"
+symbol = " "
+style = "0xffffff"
 
 # Define Dracula color palette
 [palettes.dracula]
