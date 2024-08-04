@@ -2,7 +2,7 @@
 palette = "dracula"
 
 format = '''
-[┌──](bold white)$username@$hostname $directory$git_branch$git_state$git_status$fill$cmd_duration [\[](bold white)$time[\]](bold white)
+[┌──](bold white)$username@$hostname $directory$git_branch$git_state$git_status$fill$cmd_duration [\[](bold)$time[\]](bold)
 [└─](bold white)$character'''
 
 [username]
@@ -38,7 +38,7 @@ vimcmd_symbol = '[\$](purple)'
 # note: when I'm in a git repository, a space automatically shows up at the end of the directory until the fish prompt is activated
 disabled = false
 symbol = ''
-format = "on [$branch]($style)"
+format = "[$symbol](white) [$branch]($style)"
 style = "cyan"
 
 [git_status]
