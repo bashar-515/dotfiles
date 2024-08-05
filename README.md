@@ -140,6 +140,10 @@ stow fastfetch
 stow nvim
 ```
 
+```bash
+stow aliases
+```
+
 That concludes the initalization from within the Mac Terminal. The next steps are more fun to do in Alacritty!
 
 ### The Fun Stuff (Alacritty! Neovim! Tmux!)

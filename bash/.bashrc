@@ -6,4 +6,4 @@ eval "$(starship init bash)"
 
 fastfetch
 
-. ~/.bash_aliases
+. ~/.aliases
