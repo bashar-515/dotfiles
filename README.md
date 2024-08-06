@@ -144,6 +144,18 @@ stow nvim
 stow aliases
 ```
 
+Install Dracula for Sublime.
+
+```bash
+cd "~/Library/Application Support/Sublime Text/Packages/User"
+```
+
+```bash
+git clone https://github.com/dracula/sublime.git "Dracula Color Scheme"
+```
+
+The theme for Sublime can be set from the app's preferences menu.
+
 That concludes the initalization from within the Mac Terminal. The next steps are more fun to do in Alacritty!
 
 ### The Fun Stuff (Alacritty! Neovim! Tmux!)
