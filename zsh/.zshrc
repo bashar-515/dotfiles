@@ -1,8 +1,8 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-eval "$(zoxide init)"
+eval "$(zoxide init zsh)"
 
-eval "$(starship init)"
+eval "$(starship init zsh)"
 
 fastfetch
 
