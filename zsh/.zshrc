@@ -1,5 +1,9 @@
-eval "$(starship init zsh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
-. ~/.aliases
+eval "$(zoxide init)"
+
+eval "$(starship init)"
 
 fastfetch
+
+. ~/.aliases
