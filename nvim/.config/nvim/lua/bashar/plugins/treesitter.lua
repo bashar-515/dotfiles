@@ -11,7 +11,6 @@ return {
 
 		-- configure treesitter
 		treesitter.setup({
-			auto_install = true,
 			highlight = {
 				enable = true,
 			},
@@ -22,7 +21,7 @@ return {
 				enable = true,
 			},
 			-- ensure these language parsers are installed
-			ensure_installed = {},
+			ensure_installed = { "python" },
 			incremental_selection = {
 				enable = true,
 				keymaps = {
