@@ -38,7 +38,7 @@ vimcmd_symbol = '[\$](purple)'
 # note: when I'm in a git repository, a space automatically shows up at the end of the directory until the fish prompt is activated
 disabled = false
 symbol = ''
-format = "[$symbol](white) [$branch]($style)"
+format = "[on](#ffffff) [$branch]($style)"
 style = "cyan"
 
 [git_status]
