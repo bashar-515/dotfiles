@@ -144,23 +144,13 @@ stow nvim
 stow aliases
 ```
 
-Install Dracula for Sublime.
-
-```bash
-cd "~/Library/Application Support/Sublime Text/Packages/User"
-```
-
-```bash
-git clone https://github.com/dracula/sublime.git "Dracula Color Scheme"
-```
-
-The theme for Sublime can be set from the app's preferences menu.
-
 That concludes the initalization from within the Mac Terminal. The next steps are more fun to do in Alacritty!
 
 ### The Fun Stuff (Alacritty! Neovim! Tmux!)
 
-No instructions required. Nvim and Alacritty should configure upon launch and be ready for use. Tmux has been giving me some trouble. Before launching Alacritty, exit the current Mac Terminal session. Open a new shell- still using the Mac Terminal. I think you have to manually install tmux packages here. Once that's done, you can uncomment the colorscheme line in .tmux.conf. Only then will Alacritty work exactly as expected.
+Everything should be ready on launch. With Tmux, you might have to press "Shift+i" after pressing the leader from within a Tmux session. You might also have to potentially source the Tmux configuration file afterwards by entering "r" after pressing the leader.
+
+For Sublime, enter the app and open the command palette (CMD+Shift-p). Select "Install Package Control" to be able to install packages (themes, plugins, etc.).
 
 ### OS Settings
 
