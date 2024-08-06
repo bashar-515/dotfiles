@@ -13,6 +13,8 @@ brew "fastfetch"
 brew "neovim"
 brew "tree"
 brew "ripgrep"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
 
 # 'brew install --cask'
 cask "alacritty"
