@@ -24,6 +24,7 @@ return {
         mason_lspconfig.setup({
             ensure_installed = {
                 "pylsp",
+                "gopls",
             },
         })
 
@@ -33,6 +34,8 @@ return {
                 "isort", -- Python formatter
                 "black", -- Python formatter
                 "pylint", -- Python linter
+                "golines", -- shortens long lines in go if possible
+                "gofumpt", -- strict gofmt formatter for go
             },
         })
     end,
