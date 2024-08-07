@@ -6,6 +6,7 @@ return {
         { "antosha417/nvim-lsp-file-operations", config = true},
         { "folke/neodev.nvim", opts = {} },
     },
+
     config = function()
         local lspconfig = require("lspconfig")
         local mason_lspconfig = require("mason-lspconfig")
@@ -15,9 +16,10 @@ return {
 
         vim.api.nvim_create_autocmd("LspAttach", {
             group = vim.api.nvim_create_augroup("UserLspConfig", {}),
+
             callback = function(ev)
                 local opts = { buffer = ev.buf, silent = true }
-                -- set keybinds
+
                 opts.desc = "Show LSP references"
                 keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
 

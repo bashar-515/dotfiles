@@ -14,11 +14,10 @@ return {
         "rafamadriz/friendly-snippets", -- useful snippets
         "onsails/lspkind.nvim", -- vs-code like pictograms
     },
+
     config = function()
         local cmp = require("cmp")
-
         local luasnip = require("luasnip")
-
         local lspkind = require("lspkind")
 
         -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)

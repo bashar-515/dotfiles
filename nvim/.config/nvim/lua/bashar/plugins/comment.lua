@@ -4,6 +4,7 @@ return {
     dependencies = {
         "JoosepAlviste/nvim-ts-context-commentstring",
     },
+
     config = function()
         local comment = require("Comment")
 

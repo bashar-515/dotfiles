@@ -1,6 +1,7 @@
 return {
     "nvim-tree/nvim-tree.lua",
     dependencies = "nvim-tree/nvim-web-devicons",
+
     config = function()
         local nvimtree = require("nvim-tree")
 
@@ -27,8 +28,7 @@ return {
                     },
                 },
             },
-            -- disable window_picker for
-            -- explorer to work well with window splits:
+            -- disable window_picker for explorer to work well with window splits:
             actions = {
                 open_file = {
                     window_picker = {
