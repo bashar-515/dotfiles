@@ -1,6 +1,6 @@
 # Bashar's Dotfiles
 
-This is kind of a reference/handbook/guide for me to use while setting up a new Macbook. Maybe in the distant future this'll be worth automating, but I'm really not setting up Apple computers often enough for this to become especially burdensome. Plus, I think it's kind of good to actually go through the steps manually each time as a final defense anything out of the ordinary. Happy ricing!
+This is kind of a reference/handbook/guide for me to use while setting up a new Macbook. Maybe in the distant future this'll be worth automating, but I'm really not setting up Apple computers often enough for this to become especially burdensome. Plus, I think it's kind of good to actually go through the steps manually each time as a final defense against anything out of the ordinary. Happy ricing!
 
 ## Instructions
 
