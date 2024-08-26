@@ -19,7 +19,7 @@ brew "zsh-syntax-highlighting"
 # 'brew install --cask'
 cask "alacritty"
 cask "firefox"
-cask "bitwarden"
+cask "1password"
 cask "font-anonymice-nerd-font"
 cask "amethyst"
 cask "rectangle"
