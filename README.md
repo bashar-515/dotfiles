@@ -173,3 +173,20 @@ The settings that follow must be changed manually through a GUI (like the comput
 Once step 3 is completed, Rectangle's settings can be imported from RectangleConfig.json.
 
 4. Swap control and Caps Lock keys: System Settings -> Keybaord -> Keyboard Shortcuts -> Modifier Keys -> Swap Control and Caps Lock from their respective dropdown menus
+5. Install Sublime's package manager: open command palette from within Sublime (cmd+shift+p) -> type "Install Package Control" -> hit enter
+6. Install and set Sublime colorscheme to Dracula
+7. (Finder) show path bar: from "view" in top bar of screen, select "show path bar"
+8. (Finder) show status bar: from "view" in top bar of screen, select "show status bar"
+9. Prevent screen from dimming on batter: System Settings -> battery -> options -> turn off "Slightly dim the display on battery"
+10. Stop automatically adjusting brightness: System Settings -> Displays -> turn off "automatically adjust brightness"
+11. Turn off keyboard backlighting: System Settings -> Keyboards -> turn keyboard brightness all the way down and turn off "Adjust keyboard brightness in low light"
+12. Automatically show and hide the dock: System Settings -> Desktop & Dock -> Turn on "Automatically show and hide the dock"
+13. Make dock smaller: System Settings -> Desktop & Dock -> decrease "size" slider
+14. Show scroll bar: System Settings -> Appearance -> check "Always" under "Show scroll bars"
+15. Click scroll bar: System Settings -> Appearance -> check "Jump to spot that's clicked" under "Click in the scroll bar to"
+16. Don't play sound on startup: System Settings -> sound -> turn off "Play sound on startup"
+18. Stop rearranging apps in dock: System Settings -> Desktop and Dock -> turn off "show suggested and recent apps in dock"
+19. Set firefox as default browser
+20. Lock screen: Start screen saver when inactive (for 20 min), turn display off on battery when inactive for 30 min, turn display off on power adapter when inactive for 1 hour, require password after screen saver begins or display is turned off immediately
+21. Don't autofill passwords: System Settings -> Passwords -> password options -> turn off autofill passwords and passkeys
+
