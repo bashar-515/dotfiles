@@ -190,3 +190,4 @@ Once step 3 is completed, Rectangle's settings can be imported from RectangleCon
 20. Lock screen: Start screen saver when inactive (for 20 min), turn display off on battery when inactive for 30 min, turn display off on power adapter when inactive for 1 hour, require password after screen saver begins or display is turned off immediately
 21. Don't autofill passwords: System Settings -> Passwords -> password options -> turn off autofill passwords and passkeys
 
+Note: Every shell uses zsh (i.e., it's the default shell, and it's used in wezterm, tmux on wezterm, and tmux on alacritty). Pure alacritty, though, uses bash.
