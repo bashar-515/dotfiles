@@ -15,6 +15,7 @@ brew "tree"
 brew "ripgrep"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
+brew "pyenv"
 
 # 'brew install --cask'
 cask "alacritty"
