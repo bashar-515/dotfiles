@@ -16,7 +16,7 @@ import = [
 
     decorations = "Buttonless"
 
-    opacity = 0.76
+    opacity = 0.91
     blur = false
 
     # option_as_alt = "Both"
