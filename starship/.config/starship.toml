@@ -22,7 +22,7 @@ disabled = false
 # note: root git repo is no longer truncated when fish_style_pwd_dir_length is active
 format = "[$path]($style)"
 style = "purple"
-truncation_length = 3
+truncation_length = 2
 truncation_symbol = ".../"
 disabled = false
 repo_root_style = "underline purple"
