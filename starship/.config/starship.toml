@@ -2,7 +2,7 @@
 palette = "dracula"
 
 format = '''
-[┌──](bold white)$username@$hostname $directory$git_branch$git_state$git_status$fill$cmd_duration [\[](bold)$time[\]](bold)
+[┌──](bold white)$username@$hostname $directory$git_branch$git_state$git_status$python$fill$cmd_duration [\[](bold)$time[\]](bold)
 [└─](bold white)$character'''
 
 [username]
@@ -45,6 +45,11 @@ style = "cyan"
 disabled = false
 style = "pink"
 modified = "*"
+
+[python]
+format = ' [(\($virtualenv\) )]($style)'
+style = "green"
+disabled = true
 
 [cmd_duration]
 format = " [$duration]($style)"
