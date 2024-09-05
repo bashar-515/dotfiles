@@ -77,6 +77,11 @@ Install the desired Homebrew packages, and then return to HOME.
 ```bash
 brew bundle
 ```
+Install pyenv-pyright
+
+```
+git clone https://github.com/alefpereira/pyenv-pyright.git $(pyenv root)/plugins/pyenv-pyright
+```
 
 ```bash
 cd ~
@@ -202,3 +207,11 @@ WORK installs
 
 HOME installs
 1. fusion360
+
+Python workflow
+```
+pyenv install 3.12 # installs python version
+pyenv virtualenv project # creates virtual environment
+pyenv local project # sets local python version (i.e., within cwd) to be virtual environment
+pyenv pyright # points pyright lsp to use local environment
+```
