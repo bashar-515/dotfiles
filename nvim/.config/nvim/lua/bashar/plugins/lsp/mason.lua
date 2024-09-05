@@ -23,7 +23,7 @@ return {
         -- lsp servers
         mason_lspconfig.setup({
             ensure_installed = {
-                "pylsp",
+                "pyright",
                 "gopls",
             },
         })
