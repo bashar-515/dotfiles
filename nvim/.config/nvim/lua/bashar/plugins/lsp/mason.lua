@@ -33,7 +33,7 @@ return {
             ensure_installed = {
                 "isort", -- Python formatter
                 "black", -- Python formatter
-                -- "pylint", -- Python linter
+                "pylint", -- Python linter
                 "golines", -- shortens long lines in go if possible
                 "gofumpt", -- strict gofmt formatter for go
             },

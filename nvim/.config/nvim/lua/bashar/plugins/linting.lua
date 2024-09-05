@@ -6,6 +6,7 @@ return {
 		local lint = require("lint")
 
 		lint.linters_by_ft = {
+            python = { "pylint" }
 		}
 
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
@@ -16,6 +17,9 @@ return {
 				lint.try_lint()
 			end,
 		})
+
+        require('lint').linters.pylint.cmd = 'python'
+        require('lint').linters.pylint.args = {'-m', 'pylint', '-f', 'json'}
 
 		vim.keymap.set(
             "n",
