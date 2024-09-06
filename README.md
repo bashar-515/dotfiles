@@ -205,6 +205,12 @@ Once step 3 is completed, Rectangle's settings can be imported from RectangleCon
 
 Note: Every shell uses zsh (i.e., it's the default shell, and it's used in wezterm, tmux on wezterm, and tmux on alacritty). Pure alacritty, though, uses bash.
 
+WORK installs
+download 1-3 through brew on non-work computer
+1. Slack (jamf)
+2. Zoom (jamf)
+3. 1password (jamf)
+
 HOME installs
 1. fusion360 (brew)
 2. Logi Options+ (online)
