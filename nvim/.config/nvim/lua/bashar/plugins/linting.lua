@@ -18,6 +18,7 @@ return {
 			end,
 		})
 
+        -- I think the next two lines ensure the right Python interpreter is used
         require('lint').linters.pylint.cmd = 'python'
         require('lint').linters.pylint.args = {'-m', 'pylint', '-f', 'json'}
 
