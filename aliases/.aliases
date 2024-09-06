@@ -1,2 +1,4 @@
 alias nv="nvim"
-alias v="cd ~/Desktop/git/Viam"
+alias g = "cd ~/Desktop/git"
+alias gh = "cd ~/Desktop/git/github"
+alias v="cd ~/Desktop/git/github/Viam"
