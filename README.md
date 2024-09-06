@@ -215,6 +215,9 @@ HOME installs
 1. fusion360 (brew)
 2. Logi Options+ (online)
 
+BOTH installs
+1. delve (go install)
+
 Python workflow
 ```
 pyenv install 3.12 # installs python version
