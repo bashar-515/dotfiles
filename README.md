@@ -222,3 +222,8 @@ pyenv virtualenv project # creates virtual environment
 pyenv local project # sets local python version (i.e., within cwd) to be virtual environment
 pyenv pyright # points pyright lsp to use local environment
 ```
+
+TODO
+- have WezTerm use zsh and Alacritty use Bash regardless of tmux
+- figure out why virtual env name shows up above prompt in zsh
+- fix starship space between cwd and git branch bug
