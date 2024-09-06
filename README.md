@@ -210,6 +210,7 @@ download 1-3 through brew on non-work computer
 1. Slack (jamf)
 2. Zoom (jamf)
 3. 1password (jamf)
+4. delve (go install)
 
 HOME installs
 1. fusion360 (brew)
