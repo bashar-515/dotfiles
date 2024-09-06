@@ -49,7 +49,7 @@ modified = "*"
 [python]
 format = ' [(\($virtualenv\) )]($style)'
 style = "green"
-disabled = true
+disabled = false
 
 [cmd_duration]
 format = " [$duration]($style)"
