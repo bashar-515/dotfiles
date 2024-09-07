@@ -214,6 +214,10 @@ download 1-3 through brew on non-work computer
 HOME installs
 1. fusion360 (brew)
 2. Logi Options+ (online)
+3. Slack (Brew)
+4. Zoom (Brew)
+5. 1password (Brew)
+6. Numbers (App store)
 
 BOTH installs
 1. delve (go install)
