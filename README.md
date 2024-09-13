@@ -212,15 +212,14 @@ download 1-3 through brew on non-work computer
 3. 1password (jamf)
 
 HOME installs
-1. fusion360 (brew)
-2. Logi Options+ (online)
-3. Slack (Brew)
-4. Zoom (Brew)
-5. 1password (Brew)
-6. Numbers (App store)
+1. Slack (Brew)
+2. Zoom (Brew)
+3. 1password (Brew)
+4. Numbers (App store)
 
 BOTH installs
 1. delve (go install)
+2. Logi Options+ (online)
 
 Python workflow
 ```
