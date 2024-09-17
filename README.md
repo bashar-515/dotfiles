@@ -216,6 +216,7 @@ HOME installs
 2. Zoom (Brew)
 3. 1password (Brew)
 4. Numbers (App store)
+5. Google Chrome (Brew)
 
 BOTH installs
 1. delve (go install)
