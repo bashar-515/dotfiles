@@ -22,7 +22,10 @@ return {
 				enable = true,
 			},
 			-- ensure these language parsers are installed
-			ensure_installed = { "python" },
+			ensure_installed = { 
+                "python",
+                "go",
+            },
 			incremental_selection = {
 				enable = true,
 				keymaps = {
