@@ -28,3 +28,9 @@ import = [
 
 [colors]
     transparent_background_colors = true
+
+[keyboard]
+    bindings = [
+        { key = "Right", mods = "Alt", chars = "\u001BF" },
+        { key = "Left",  mods = "Alt", chars = "\u001BB" },
+    ]
