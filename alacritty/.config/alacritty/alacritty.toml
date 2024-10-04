@@ -4,7 +4,7 @@ import = [
 
 [shell]
     # program = "/opt/homebrew/bin/tmux"
-    program = "/opt/homebrew/bin/bash"
+    program = "/bin/zsh"
     args = ["-l"]
 
 [env]
