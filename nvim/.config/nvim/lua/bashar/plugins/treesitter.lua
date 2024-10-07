@@ -25,6 +25,7 @@ return {
 			ensure_installed = { 
                 "python",
                 "go",
+                "dart",
             },
 			incremental_selection = {
 				enable = true,
