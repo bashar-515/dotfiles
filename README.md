@@ -235,3 +235,4 @@ TODO
 - figure out why virtual env name shows up above prompt in zsh
 - fix starship space between cwd and git branch bug
 - nvim "go to declaration" not working
+- configure bash completions
