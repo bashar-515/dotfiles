@@ -1,2 +1,4 @@
 #!/opt/homebrew/bin/bash
 
+# move around window by clicking anywhere while holding cmd+ctrl
+defaults write -g NSWindowShouldDragOnGesture -bool true
