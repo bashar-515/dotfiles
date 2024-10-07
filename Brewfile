@@ -17,6 +17,7 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 brew "pyenv"
 brew "pyenv-virtualenv"
+brew "zsh-completions"
 
 # 'brew install --cask'
 cask "alacritty"

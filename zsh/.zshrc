@@ -20,3 +20,11 @@ eval "$(pyenv virtualenv-init -)"
 
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
+
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
