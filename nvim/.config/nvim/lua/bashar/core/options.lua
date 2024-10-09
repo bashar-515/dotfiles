@@ -30,7 +30,6 @@ opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
 
 opt.scrolloff = 8
-opt.colorcolumn = "81"
 opt.wrap = false
 opt.mouse = "a"
 opt.undofile = true
