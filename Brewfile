@@ -18,6 +18,7 @@ brew "zsh-syntax-highlighting"
 brew "pyenv"
 brew "pyenv-virtualenv"
 brew "zsh-completions"
+brew "cocoapods"
 
 # 'brew install --cask'
 cask "alacritty"
