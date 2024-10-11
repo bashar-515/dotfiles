@@ -5,3 +5,5 @@ Brewfile.lock.json
 **/tmux-resurrect/
 **/tmux/
 **/vim-tmux-navigator/
+
+aerospace/.aerospace.toml
