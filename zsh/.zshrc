@@ -28,3 +28,5 @@ then
   autoload -Uz compinit
   compinit
 fi
+
+export PATH=$HOME/Developer/flutter/bin:$PATH

@@ -14,3 +14,5 @@ eval "$(pyenv virtualenv-init -)"
 
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
+
+export PATH=$HOME/Developer/flutter/bin:$PATH
