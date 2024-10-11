@@ -225,6 +225,7 @@ HOME installs
 BOTH installs
 1. delve (go install)
 2. Logi Options+ (online)
+3. flutter (manually from online), extract to ~/Developer folder
 
 Python workflow
 ```
