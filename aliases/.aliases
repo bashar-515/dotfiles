@@ -1,31 +1,8 @@
 alias nv="nvim"
 alias me="cd ~/Desktop/me/"
 alias dot="cd ~/dotfiles"
-
-function g() {
-    if [ -d ~/Desktop/me/git.nosync ]; then
-        cd ~/Desktop/me/git.nosync
-    elif [ -d ~/Desktop/me/git ]; then
-        cd ~/Desktop/me/git
-    fi
-}
-
-function gh() {
-    g
-    cd github
-}
-
-function v() {
-    g
-    cd github/viam
-}
-
-function app() {
-    g
-    cd github/viam/app
-}
-
-function rdk() {
-    g
-    cd github/viam/rdk
-}
+alias g="cd ~/Developer/git"
+alias gh="cd ~/Developer/git/github"
+alias v="cd ~/Developer/git/github/Viam"
+alias app="cd ~/Developer/git/github/Viam/app"
+alias rdk="cd ~/Developer/git/github/Viam/rdk"
