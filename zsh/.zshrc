@@ -30,3 +30,5 @@ then
 fi
 
 export PATH=$HOME/Developer/Flutters/3.19.6/flutter/bin:$PATH
+
+export PATH="$PATH":"$HOME/.pub-cache/bin"
