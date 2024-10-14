@@ -29,4 +29,4 @@ then
   compinit
 fi
 
-export PATH=$HOME/Developer/flutter/bin:$PATH
+export PATH=$HOME/Developer/Flutters/3.19.6/flutter/bin:$PATH
