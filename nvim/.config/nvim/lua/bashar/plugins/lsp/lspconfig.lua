@@ -77,5 +77,14 @@ return {
             end,
         })
 
+        -- flutter dart
+        require("flutter-tools").setup({
+            lsp = {
+                settings = {
+                    lineLength = vim.o.textwidth
+                }
+            }
+        })
+
     end,
 }

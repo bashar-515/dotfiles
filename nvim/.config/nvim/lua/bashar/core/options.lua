@@ -33,3 +33,5 @@ opt.scrolloff = 8
 opt.wrap = false
 opt.mouse = "a"
 opt.undofile = true
+
+opt.textwidth = 140
