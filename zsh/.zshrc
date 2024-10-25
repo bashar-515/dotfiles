@@ -29,7 +29,7 @@ then
   compinit
 fi
 
-export PATH=$HOME/Developer/Flutters/3.19.6/flutter/bin:$PATH
+export PATH=$HOME/Developer/Flutters/3.24.3/flutter/bin:$PATH
 
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 
@@ -97,3 +97,10 @@ fi
 ## By /Users/bashar.eid@viam.com/Developer/Flutters/3.19.6/flutter/bin/cache/flutter_tools.snapshot
 
 # end FLUTTER zsh-completion
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/bashar.eid@viam.com/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/bashar.eid@viam.com/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/bashar.eid@viam.com/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/bashar.eid@viam.com/google-cloud-sdk/completion.zsh.inc'; fi
+
