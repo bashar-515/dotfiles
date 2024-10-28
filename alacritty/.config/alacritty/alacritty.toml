@@ -1,8 +1,5 @@
-import = [
-    "~/.config/alacritty/alacritty-theme/themes/dracula.toml"
-]
 
-[shell]
+[terminal.shell]
     # program = "/opt/homebrew/bin/tmux"
     program = "/bin/zsh"
     args = ["-l"]
@@ -34,3 +31,10 @@ import = [
         { key = "Right", mods = "Alt", chars = "\u001BF" },
         { key = "Left",  mods = "Alt", chars = "\u001BB" },
     ]
+
+[general]
+import = [
+    "~/.config/alacritty/alacritty-theme/themes/dracula.toml"
+]
+
+[terminal]
