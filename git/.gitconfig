@@ -1,0 +1,5 @@
+[user]
+	name = Bashar Eid
+	email = bashar.eid@viam.com
+[url "ssh://git@github.com/"]
+    insteadOf = https://github.com/
