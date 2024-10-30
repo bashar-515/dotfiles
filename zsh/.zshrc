@@ -29,7 +29,7 @@ then
   compinit
 fi
 
-export PATH=$HOME/Developer/Flutters/3.24.3/flutter/bin:$PATH
+export PATH=$HOME/Developer/flutter/bin:$PATH
 
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 
