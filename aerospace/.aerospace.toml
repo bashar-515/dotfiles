@@ -156,5 +156,16 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 [[on-window-detected]]
-if.app-id = ['com.apple.finder', 'com.apple.iphonesimulator', 'com.apple.dt.Xcode']
+if.app-id = 'com.apple.finder'
 run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = 'com.apple.iphonesimulator'
+run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = 'com.apple.dt.Xcode'
+run = "layout floating"
+
+
+
