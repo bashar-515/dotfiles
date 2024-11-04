@@ -167,5 +167,7 @@ run = "layout floating"
 if.app-id = 'com.apple.dt.Xcode'
 run = "layout floating"
 
-
+[[on-window-detected]]
+if.app-id = 'us.zoom.xos'
+run = "layout floating"
 
