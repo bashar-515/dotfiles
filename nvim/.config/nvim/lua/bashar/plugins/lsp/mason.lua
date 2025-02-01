@@ -25,6 +25,9 @@ return {
             ensure_installed = {
                 "pyright",
                 "gopls",
+                "docker_compose_language_service",
+                "dockerls",
+                "eslint",
             },
         })
 
@@ -36,6 +39,7 @@ return {
                 "pylint", -- Python linter
                 "golines", -- shortens long lines in go if possible
                 "gofumpt", -- strict gofmt formatter for go
+                "prettierd", -- formatter
             },
         })
     end,
