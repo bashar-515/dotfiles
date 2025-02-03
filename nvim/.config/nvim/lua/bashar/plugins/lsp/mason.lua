@@ -28,6 +28,9 @@ return {
                 "docker_compose_language_service",
                 "dockerls",
                 "eslint",
+                "ts_ls",
+                "html",
+                "cssls",
             },
         })
 

@@ -26,6 +26,9 @@ return {
                 "python",
                 "go",
                 "dart",
+                "typescript",
+                "html",
+                "css",
             },
 			incremental_selection = {
 				enable = true,
