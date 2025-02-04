@@ -42,6 +42,7 @@ return {
                 "golines", -- shortens long lines in go if possible
                 "gofumpt", -- strict gofmt formatter for go
                 "prettierd",
+                "eslint_d"
             },
         })
     end,
