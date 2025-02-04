@@ -7,11 +7,10 @@ return {
 
 		conform.setup({
 			formatters_by_ft = {
+                go = {"golines", "gofumpt"},
 				python = { "isort", "black" },
                 css = { "prettierd" },
                 html = { "prettierd" },
-                javascript = { "eslint_d" },
-                typescript = {"eslint_d"}
 			},
 			format_on_save = {
 				lsp_fallback = true,
