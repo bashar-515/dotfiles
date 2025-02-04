@@ -19,4 +19,4 @@ export PATH=$HOME/Developer/flutter/bin:$PATH
 
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 
-export PRETTIERD_LOCAL_PRETTIER_ONLY=~/.prettierrc
+export PRETTIERD_DEFAULT_CONFIG=~/.prettierrc
