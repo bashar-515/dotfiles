@@ -10,8 +10,8 @@ return {
 				python = { "isort", "black" },
                 css = { "prettierd" },
                 html = { "prettierd" },
-                javascript = { "eslint" },
-                typescript = {"eslint"}
+                javascript = { "eslint_d" },
+                typescript = {"eslint_d"}
 			},
 			format_on_save = {
 				lsp_fallback = true,
