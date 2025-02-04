@@ -103,5 +103,3 @@ if [ -f '/Users/bashar.eid@viam.com/google-cloud-sdk/path.zsh.inc' ]; then . '/U
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/bashar.eid@viam.com/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/bashar.eid@viam.com/google-cloud-sdk/completion.zsh.inc'; fi
-
-export PRETTIERD_DEFAULT_CONFIG=~/.prettierrc
