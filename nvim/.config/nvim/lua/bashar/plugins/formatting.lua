@@ -10,7 +10,6 @@ return {
                 go = {"golines", "gofumpt"},
 				python = { "isort", "black" },
                 css = { "prettierd" },
-                html = { "prettierd" },
                 json = { "prettierd" },
 			},
 			format_on_save = {
