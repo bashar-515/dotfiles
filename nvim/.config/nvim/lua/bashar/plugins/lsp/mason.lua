@@ -30,6 +30,7 @@ return {
                 "ts_ls",
                 "html",
                 "cssls",
+                "jsonls",
             },
         })
 

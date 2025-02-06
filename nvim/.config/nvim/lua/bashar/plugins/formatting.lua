@@ -7,7 +7,7 @@ return {
 
 		conform.setup({
 			formatters_by_ft = {
-                go = {"golines", "gofumpt"},
+                go = { "gofumpt" },
 				python = { "isort", "black" },
                 css = { "prettierd" },
                 json = { "prettierd" },
