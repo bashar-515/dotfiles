@@ -1,3 +1,0 @@
-format = '''
-[┌──](bold white)$username@$hostname $directory$git_branch$git_state$git_status$python$fill$cmd_duration [\[](bold)$time[\]](bold)
-[└─](bold white)$character'''
