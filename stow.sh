@@ -4,7 +4,7 @@ DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 DOTFILES=$(ls -d */ | sed 's#/##')
 
-stow() {
+stow_dotfiles() {
     for dir in $DOTFILES
         stow -d "$DOTFILES_DIR" -t "$HOME" "$dir"
     done
@@ -15,4 +15,4 @@ if ! command -v stow &> /dev/null; then
     exit 1
 fi
 
-stow
+stow_dotfiles
