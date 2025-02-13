@@ -2,7 +2,7 @@
 
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-DOTFILES=$(ls -d */ | sed 's#/##')
+DOTFILES=$(ls -d "$DOTFILES_DIR"/*/ | xargs -n1 basename)
 
 stow_dotfiles() {
     for dotfile in $DOTFILES; do
