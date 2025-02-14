@@ -1,0 +1,17 @@
+cask_args appdir: "~/Applications"
+
+brew "stow"
+brew "tmux"
+brew "starship"
+brew "neovim"
+zsh-autosuggestions
+brew zsh-syntax-highlighting
+
+cask "firefox"
+cask "1password"
+cask "rectangle"
+cask "slack"
+cask "docker"
+cask "zoom"
+cask "spotify"
+cask "nikitabobko/tap/aerospace"
