@@ -4,9 +4,10 @@ brew "stow"
 brew "tmux"
 brew "starship"
 brew "neovim"
-zsh-autosuggestions
+brew zsh-autosuggestions
 brew zsh-syntax-highlighting
 
+cask "ghostty"
 cask "firefox"
 cask "1password"
 cask "rectangle"
