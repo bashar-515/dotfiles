@@ -2,11 +2,24 @@
 
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-DOTFILES=$(ls -d "$DOTFILES_DIR"/*/ | xargs -n1 basename)
+OS="$(uname)"
+
+COMMON_DIR="$DOTFILES_DIR/common"
+OS_DIR="$DOTFILES_DIR/$OS"
+
+DOTFILES_COMMON=$(ls -d "$COMMON_DIR"/*/ | xargs -n1 basename)
+DOTFILES_OS=$(ls -d "$OS_DIR"/*/ | xargs -n1 basename)
+
 
 stow_dotfiles() {
-    for dotfile in $DOTFILES; do
-        stow -d "$DOTFILES_DIR" -t "$HOME" "$dotfile"
+    local dir=$1
+    local dotfiles=$2
+
+    for dotfile in $dotfiles; do
+        echo $dir
+        echo $HOME
+        echo $dotfile
+        # stow -d "$dir" -t "$HOME" "$dotfile"
     done
 }
 
@@ -15,4 +28,10 @@ if ! command -v stow &> /dev/null; then
     exit 1
 fi
 
-stow_dotfiles
+if [[ -d "$COMMON_DIR" ]]; then
+    stow_dotfiles "$COMMON_DIR" "$DOTFILES_COMMON"
+fi
+
+if [[ -d "$OS_DIR" ]]; then
+    stow_dotfiles "$OS_DIR" "$DOTFILES_OS"
+fi
