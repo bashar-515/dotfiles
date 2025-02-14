@@ -16,10 +16,16 @@ stow_dotfiles() {
     local dotfiles=$2
 
     for dotfile in $dotfiles; do
-        echo $dir
-        echo $HOME
-        echo $dotfile
-        # stow -d "$dir" -t "$HOME" "$dotfile"
+        # for file in "$dir/$dotfile"/*; do
+        #     [ -e "$file" ] || continue  # Skip if no files exist
+        #
+        #     filename=$(basename "$file")
+        #
+        #     echo "Processing file: $filename"
+        # done
+
+        # e.g., stow -d ~/.files/common -t ~/. nvim
+        stow -d "$dir" -t "$HOME" "$dotfile"
     done
 }
 
