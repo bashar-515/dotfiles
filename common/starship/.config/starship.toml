@@ -22,6 +22,7 @@ min_time = 0
 
 [time]
 format = "[\\[$time\\]]($style)"
+use_12hr = true
 disabled = false
 
 [character]

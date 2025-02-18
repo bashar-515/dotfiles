@@ -4,6 +4,7 @@ DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 COMMON_DIR="$DOTFILES_DIR/common"
 OS_DIR="$DOTFILES_DIR/$(uname)"
+OS_SETUP_SCRIPT="$OS_DIR/setup.sh"
 
 stow_dotfiles() {
     # absolute path to either Linux, Darwin, or common directories
@@ -44,5 +45,12 @@ if [[ ! -d "$OS_DIR" ]]; then
     exit 1
 fi
 
+if [[ ! -e "$OS_SETUP_SCRIPT" ]]; then
+    echo "$OS_SETUP_SCRIPT does not exist"
+    exit 1
+fi
+
 stow_dotfiles "$COMMON_DIR"
 stow_dotfiles "$OS_DIR"
+
+bash "$OS_SETUP_SCRIPT"
