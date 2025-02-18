@@ -22,4 +22,6 @@ chmod +x script.sh
 ./setup.sh
 ```
 
-The setup.sh script currently leaves out
+## TODO
+1. Configure Git and Docker completions (in zsh & bash).
+2. Note Darwin settings.
