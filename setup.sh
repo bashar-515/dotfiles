@@ -45,12 +45,9 @@ if [[ ! -d "$OS_DIR" ]]; then
     exit 1
 fi
 
-if [[ ! -e "$OS_SETUP_SCRIPT" ]]; then
-    echo "$OS_SETUP_SCRIPT does not exist"
-    exit 1
-fi
-
 stow_dotfiles "$COMMON_DIR"
 stow_dotfiles "$OS_DIR"
 
-bash "$OS_SETUP_SCRIPT"
+if [[ -e "$OS_SETUP_SCRIPT" ]]; then
+    bash "$OS_SETUP_SCRIPT"
+fi
