@@ -11,7 +11,10 @@ format = "[$hostname]($style) "
 ssh_only = false
 
 [git_branch]
-format = "[$branch]($style)"
+format = "on [$branch]($style)"
+
+[git_status]
+modified = "*"
 
 [fill]
 symbol = " "
