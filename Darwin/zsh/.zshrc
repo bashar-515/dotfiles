@@ -5,13 +5,16 @@ fi
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 AUTOSUGGESTIONS="/opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-SYNTAX_HIGHLIGHTING="/opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-
 if [ -f "$AUTOSUGGESTIONS" ]; then
     source "$AUTOSUGGESTIONS"
 fi
 
+SYNTAX_HIGHLIGHTING="/opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 if [ -f "$SYNTAX_HIGHLIGHTING" ]; then
     source "$SYNTAX_HIGHLIGHTING"
 fi
 
+ALIASES_PATH="$HOME/.aliases"
+if [ -e "$ALIASES_PATH" ]; then
+    source "$ALIASES_PATH"
+fi
