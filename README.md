@@ -21,6 +21,10 @@ xcode-select --install
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+Run the following command to make the brew command available in the current shell session.
+```
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
 
 #### Settings
 ##### System
