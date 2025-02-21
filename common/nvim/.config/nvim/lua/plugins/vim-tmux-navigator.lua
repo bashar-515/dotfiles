@@ -1,3 +1,4 @@
+-- allows for seamless navigation between tmux and neovim panes
 return {
   "christoomey/vim-tmux-navigator",
   cmd = {
