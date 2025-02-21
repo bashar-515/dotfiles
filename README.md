@@ -1,5 +1,5 @@
 # dotfiles
-
+## Before running the setup script, ensure that you have the proper dependencies installed! See below for details.
 #### setup.sh
 1. From .
 ```
