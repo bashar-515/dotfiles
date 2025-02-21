@@ -30,7 +30,7 @@ listed in the common/Brewfile
 ```
 brew bundle
 ```
-**Recap** Download the Xcode command line tools; download Homebrew and ensure that its usable from within the shell session; run `brew
+_Recap_ Download the Xcode command line tools; download Homebrew and ensure that its usable from within the shell session; run `brew
 bundle` from inside the 'common' subdirectory.
 
 #### Settings
