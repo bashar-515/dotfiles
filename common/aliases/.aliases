@@ -1,1 +1,13 @@
+# commands
 alias nv='nvim'
+
+alias la='ls -la'
+
+alias cl='clear'
+
+# directories
+alias g='cd ~/Developer/Git'
+alias gh='cd ~/Developer/Git/Github'
+alias d='cd ~/Developer/Git/Github/docker'
+
+alias dot="cd ~/.files"
