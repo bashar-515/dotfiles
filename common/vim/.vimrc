@@ -1,9 +1,3 @@
-call plug#begin()
-
-Plug 'christoomey/vim-tmux-navigator'
-
-call plug#end()
-
 let mapleader = " "
 
 inoremap jk <Esc> " exit insert mode
