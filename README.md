@@ -54,10 +54,11 @@ bundle` from inside the 'common' subdirectory.
 ### Steps 
 #### Requisite tools
 _Important!_ Before running the install script, ensure that _git_, _stow_, and _curl_ are installed on the system. These are **required**
-for the 'setup.sh' to run correctly.
+for 'setup.sh' to run correctly.
 
 Next, simply use your package manager to install neovim, tmux, and starship for my the base of my environment. Then the script can be
 executed!
 
 ## TODO
 1. Configure Git and Docker completions (in zsh & bash). Git in Bash is done.
+2. Automate _everything_ so that no manual steps are necessary.
