@@ -25,10 +25,13 @@ Run the following command to make the brew command available in the current shel
 ```
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
-3. To complete the process, run the following command while `cd`'ed into the 'common' subdirectory to install my preferred base tools.
+3. To complete the process, run the following command while `cd`'ed into the 'common' subdirectory to install my preferred base tools,
+listed in the common/Brewfile
 ```
 brew bundle
 ```
+**Recap** Download the Xcode command line tools; download Homebrew and ensure that its usable from within the shell session; run `brew
+bundle` from inside the 'common' subdirectory.
 
 #### Settings
 ##### System
