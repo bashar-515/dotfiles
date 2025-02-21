@@ -50,5 +50,14 @@ bundle` from inside the 'common' subdirectory.
 - Show Finder path bar: View -> "Show Path Bar"
 - Show Finder status bar: View -> "Show Status Bar"
 
+## Linux
+### Steps 
+#### Requisite tools
+_Important!_ Before running the install script, ensure that _git_, _stow_, and _curl_ are installed on the system. These are **required**
+for the 'setup.sh' to run correctly.
+
+Next, simply use your package manager to install neovim, tmux, and starship for my the base of my environment. Then the script can be
+executed!
+
 ## TODO
 1. Configure Git and Docker completions (in zsh & bash). Git in Bash is done.
