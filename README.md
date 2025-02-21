@@ -25,6 +25,10 @@ Run the following command to make the brew command available in the current shel
 ```
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
+3. To complete the process, run the following command while `cd`'ed into the 'common' subdirectory to install my preferred base tools.
+```
+brew bundle
+```
 
 #### Settings
 ##### System
@@ -44,4 +48,4 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 - Show Finder status bar: View -> "Show Status Bar"
 
 ## TODO
-1. Configure Git and Docker completions (in zsh & bash).
+1. Configure Git and Docker completions (in zsh & bash). Git in Bash is done.
