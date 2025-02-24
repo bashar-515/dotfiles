@@ -1,6 +1,7 @@
 # commands
 alias nv='nvim'
 
+alias ls='ls -a'
 alias la='ls -la'
 
 alias cl='clear'
