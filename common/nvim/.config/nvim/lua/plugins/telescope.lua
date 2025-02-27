@@ -4,6 +4,7 @@ return {
   dependencies = {
     'nvim-lua/plenary.nvim',
     { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+    -- TODO: treesitter seems to be a required dependency. Should I list it here?
   },
 
   config = function()
