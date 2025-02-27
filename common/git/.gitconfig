@@ -1,0 +1,8 @@
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[diff]
+	algorithm = histogram
+[merge]
+	conflictstyle = zdiff3
