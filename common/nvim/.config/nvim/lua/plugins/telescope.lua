@@ -28,6 +28,7 @@ return {
     local builtin = require('telescope.builtin')
 
     keymap.set('n', '<leader>ff', builtin.find_files, {})
-    keymap.set('n', '<leader>fs', builtin.live_grep, {})
+    keymap.set('n', '<leader>fg', builtin.live_grep, {}) -- requires 'ripgrep' on system to work (and also 'nvim-treesitter')
+    keymap.set('n', '<leader>fs', builtin.grep_string, {}) -- requires 'ripgrep' on system to work (and also 'nvim-treesitter')
   end
 }
