@@ -1,4 +1,4 @@
--- toggle a neovim pane (i.e., a split window/screen) between taking up the full screen and not
+-- toggle a neovim pane (i.e., a split window/screen) between full screen and not
 return {
     "szw/vim-maximizer",
     keys = {
