@@ -1,4 +1,5 @@
 -- informational line at bottom of screen
+-- TODO: adjust sections
 return {
   "nvim-lualine/lualine.nvim",
   dependencies = 'nvim-tree/nvim-web-devicons',
@@ -7,7 +8,7 @@ return {
     local lualine = require("lualine")
 
     lualine.setup({
-      options = { theme = "dracula"}
+      options = { theme = "dracula"},
     })
   end
 }
