@@ -13,26 +13,44 @@ return {
     local telescope = require("telescope")
     local actions = require("telescope.actions")
 
+    -- current behavior: ignore '.git' directory, show hidden files and do not respect '.gitignore'
     telescope.setup({
+      pickers = {
+        find_files = {
+          find_command = {
+            'rg',
+            '--files',
+            '--hidden',
+            '--no-ignore',
+            '--iglob',
+            '!.git',
+          },
+        },
+      },
+
       defaults = {
-        path_display = { "smart" },
+        vimgrep_arguments = {
+          "rg",
+          "--color=never",      -- required/default
+          "--no-heading",       -- required/default
+          "--with-filename",    -- required/default
+          "--line-number",      -- required/default
+          "--column",           -- required/default
+
+          "--smart-case",       -- default
+
+          "--hidden",
+          "--no-ignore",
+          "--glob",
+          "!{**/.git/*}",
+        },
+
         mappings = {
           i = {
             ["<C-k>"] = actions.move_selection_previous,
             ["<C-j>"] = actions.move_selection_next,
           },
         },
-
-        -- allow hidden (dot) files to show up when searching for strings
-        -- [for some reason this seems to only affect `live_grep` and `grep_string` (i.e., not searching for files),
-        -- hence the use of '--hidden' with `find_files`]
-        hidden = true,
-
-        -- this option needs to be set for files in a '.git' directory to _not_ show up when using `find_files`. It
-        -- already applies when using `live_grep` and `grep_string`
-        file_ignore_patterns = { ".git/" }
-
-        -- right now, all functions (`find_files`, `live_grep`, and `grep_string`) respect a '.gitignore' file
       },
     })
 
@@ -41,9 +59,7 @@ return {
     local keymap = vim.keymap
     local builtin = require('telescope.builtin')
 
-    -- current behavior: shows hidden files, ignores anything in '.git' and respects '.gitignore'
-    keymap.set('n', '<leader>ff', "<cmd>Telescope find_files find_command=rg,--files,--hidden<cr>", {})
-
+    keymap.set('n', '<leader>ff', builtin.find_files, {})
     keymap.set('n', '<leader>fg', builtin.live_grep, {})    -- requires 'ripgrep' on system to work (and also 'nvim-treesitter')
     keymap.set('n', '<leader>fs', builtin.grep_string, {})  -- requires 'ripgrep' on system to work (and also 'nvim-treesitter')
   end
