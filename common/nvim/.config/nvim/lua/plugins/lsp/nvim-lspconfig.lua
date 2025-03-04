@@ -1,7 +1,9 @@
 -- actually use LSP's installed by Mason in Neovim
 return {
   "neovim/nvim-lspconfig",
-  -- TODO: [q] should I include this? event = { "BufReadPre", "BufNewFile" },
+
+  -- lazy load
+  event = { "BufReadPre", "BufNewFile" },
 
   config = function()
     local lspconfig = require("lspconfig")

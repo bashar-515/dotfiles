@@ -1,8 +1,9 @@
 -- syntax highlighting
 return {
   "nvim-treesitter/nvim-treesitter",
-  -- TODO: [q] should I include this? event = { "BufReadPre", "BufNewFile" },
-  build = ":TSUpdate",
+
+  -- lazy load
+  event = { "BufReadPre", "BufNewFile" },
 
   config = function()
     local configs = require("nvim-treesitter.configs")
