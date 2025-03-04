@@ -1,6 +1,7 @@
 -- syntax highlighting
 return {
   "nvim-treesitter/nvim-treesitter",
+  -- TODO: [q] should I include this? event = { "BufReadPre", "BufNewFile" },
   build = ":TSUpdate",
 
   config = function()
