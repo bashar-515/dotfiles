@@ -48,9 +48,6 @@ return {
         keymap.set({ 'n', 'v' }, "<leader>ca", buf.code_action, opts)
         keymap.set("n", "gr", buf.references, opts)
         keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts)
-        keymap.set("n", '<leader>f', function()
-          buf.format { async = true }
-        end, opts)
       end
     })
   end
