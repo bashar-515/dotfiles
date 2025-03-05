@@ -1,4 +1,5 @@
 -- pretty and functional tabs
+-- TODO: fully configure
 return {
 	"akinsho/bufferline.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
