@@ -1,3 +1,4 @@
+-- automate the installation of linters and formatters through Mason
 return {
 	"whoissethdaniel/mason-tool-installer.nvim",
 
