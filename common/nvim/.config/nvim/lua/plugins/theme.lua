@@ -1,17 +1,29 @@
 -- install and set theme
+
+-- return {
+-- 	"navarasu/onedark.nvim",
+--
+-- 	config = function()
+-- 		local onedark = require("onedark")
+--
+-- 		onedark.setup({
+-- 			style = "darker",
+-- 			transparent = true,
+-- 		})
+--
+-- 		onedark.load()
+-- 	end,
+-- }
+
 return {
-	"rose-pine/neovim",
-	name = "rose-pine",
+	"ellisonleao/gruvbox.nvim",
+	priority = 1000,
 
 	config = function()
-		require("rose-pine").setup({
-			variant = "moon",
-
-			styles = {
-				transparency = true,
-			},
+		require("gruvbox").setup({
+			transparent_mode = true,
 		})
 
-		vim.cmd("colorscheme rose-pine")
+		vim.cmd("colorscheme gruvbox")
 	end,
 }
