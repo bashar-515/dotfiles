@@ -1,5 +1,4 @@
 -- search for files and strings throughout a directory
--- TODO: stop respecting '.gitignore' files
 return {
 	"nvim-telescope/telescope.nvim",
 	tag = "0.1.8",
@@ -63,5 +62,6 @@ return {
 		keymap.set("n", "<leader>ff", builtin.find_files, {})
 		keymap.set("n", "<leader>fg", builtin.live_grep, {}) -- requires 'ripgrep' on system to work (and also 'nvim-treesitter')
 		keymap.set("n", "<leader>fs", builtin.grep_string, {}) -- requires 'ripgrep' on system to work (and also 'nvim-treesitter')
+		keymap.set("n", "<leader>fb", builtin.buffers, {})
 	end,
 }
