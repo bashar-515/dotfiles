@@ -1,4 +1,6 @@
 -- allows for seamless navigation between tmux and neovim panes
+-- TODO: Vim also has this plugin. It'd be nice to find a way to only have it installed once but working for both
+-- programs
 return {
 	"christoomey/vim-tmux-navigator",
 	cmd = {
