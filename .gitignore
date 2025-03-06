@@ -1,3 +1,5 @@
 common/git/.gitconfig
 
 common/vim/.vim/.netrwhist
+
+common/vim/.vim/pack/plugins/start/vim-tmux-navigator
