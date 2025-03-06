@@ -1,4 +1,5 @@
 -- install and set theme
+-- this is currently set in my 'vim' configuration via various 'gruvbox*.vim' files
 return {}
 
 --[[ return {
