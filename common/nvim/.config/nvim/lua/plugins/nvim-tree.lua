@@ -31,7 +31,7 @@ return {
 			},
 
 			filters = {
-				custom = { ".git" },
+				custom = { ".git/" },
 			},
 		})
 
