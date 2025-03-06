@@ -8,7 +8,7 @@ return {
 		local lualine = require("lualine")
 
 		lualine.setup({
-			options = { theme = "dracula" },
+			options = { theme = "gruvbox-material" },
 		})
 	end,
 }

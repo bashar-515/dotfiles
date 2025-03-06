@@ -1,5 +1,7 @@
 let mapleader = " "
 
+colorscheme gruvbox-material
+
 inoremap jk <Esc>
 nnoremap <leader>nh :nohl<CR>
 

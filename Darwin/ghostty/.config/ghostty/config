@@ -1,7 +1,56 @@
+# cmd+shift+, to reload config
+
+# run `ghostty +list-themes` to browse themes
+#
 # theme = Japanesque
 # theme = mathias
 # theme = niji
-theme = Peppermint
+# theme = Peppermint
 # theme = RetroLegends
+#
+# theme = AlienBlood
+# theme = Andromeda
+# theme = ayu
+# theme = Ayu Mirage
+# theme = Banana Blueberr
+# theme = Blue Matrix
+# theme = BluLocoDark
+# theme = Calamity
+# theme = catpuccin-macchiato
+# theme = catpuccin-mocha
+# theme = chalk
+# theme = Ciapre
+# theme = Cobalt2
+# theme = CyberpunkScarletProtocol
+# theme = Dark Pastel
+# theme = detuned
+# theme = Elementary
+# theme = ENCOM
+# theme = Fahrenheit
+# theme = flexoki-dark
+# theme = Floraverse
+# theme = FrontEndDelight
+theme = gruvbox-material
+# theme = Hardcore
+# theme = mellow
+# theme = Mirage
+# theme = Misterioso
+# theme = Neon
+# theme = Nocturnal Winter
+# theme = NvimDark
+# theme = Oceanic-Next
+# theme = Oxocarbon
+# theme = Rapture
+# theme = Red Alert
+# theme = rose-pine
+# theme = rose-pine-dawn
+# theme = Scarlet Protocol
+# theme = SeaShells
+# theme = Square
+# theme = Tomorrow Night
+# theme = Tomorrow Night Burns
+# theme = UltraDark
+# theme = vesper
+# theme = zenwritten_dark
 
-background-opacity = 0.82
+background-opacity = 0.9
