@@ -1,5 +1,6 @@
 let mapleader = " "
 
+set background=dark
 colorscheme gruvbox-material
 
 inoremap jk <Esc>
@@ -42,3 +43,8 @@ set splitbelow
 set scrolloff=8
 set nowrap
 set undofile
+
+let extra_file = expand("~/.vim/extra.vim")
+if filereadable(extra_file)
+  execute "source " . extra_file
+endif
