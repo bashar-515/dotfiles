@@ -7,6 +7,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 AUTOSUGGESTIONS="/opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 if [ -f "$AUTOSUGGESTIONS" ]; then
     source "$AUTOSUGGESTIONS"
+    export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ffffff"
 fi
 
 SYNTAX_HIGHLIGHTING="/opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
