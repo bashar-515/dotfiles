@@ -11,6 +11,8 @@
 	renames = true
 [merge]
 	conflictstyle = zdiff3
+
+### git-delta ###
 [core]
     pager = delta
 [interactive]
@@ -18,3 +20,4 @@
 [delta]
     navigate = true
     dark = true
+### end git-delta ###
