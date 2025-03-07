@@ -15,3 +15,5 @@ fi
 if command -v fzf &> /dev/null; then
   source <(fzf --bash)
 fi
+
+export BAT_THEME=TwoDark

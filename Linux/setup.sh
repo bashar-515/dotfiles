@@ -30,3 +30,4 @@ curl -o "${DEST_FILE}" "${URL}"
 # ripgrep
 # wget
 # fzf
+# bat
