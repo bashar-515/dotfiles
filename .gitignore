@@ -3,3 +3,5 @@ common/vim/.vim/.netrwhist
 common/vim/.vim/pack/**/start/
 
 common/nvim/.config/nvim/lazy-lock.json
+
+common/tmux/plugins/
