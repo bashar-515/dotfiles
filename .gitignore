@@ -4,4 +4,4 @@ common/vim/.vim/pack/**/start/
 
 common/nvim/.config/nvim/lazy-lock.json
 
-common/tmux/plugins/
+common/tmux/.tmux/plugins/
