@@ -1,9 +1,10 @@
 -- actually use LSP's installed by Mason in Neovim
 return {
 	"neovim/nvim-lspconfig",
-
-	-- lazy load
 	event = { "BufReadPre", "BufNewFile" },
+	dependencies = {
+		"hrsh7th/cmp-nvim-lsp",
+	},
 
 	config = function()
 		local lspconfig = require("lspconfig")
@@ -11,10 +12,14 @@ return {
 
 		local keymap = vim.keymap
 
+		local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
 		-- set up language servers
 		mason_lspconfig.setup_handlers({
 			function(server_name)
-				lspconfig[server_name].setup({})
+				lspconfig[server_name].setup({
+					capabilities = capabilities,
+				})
 			end,
 		})
 
