@@ -7,9 +7,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 AUTOSUGGESTIONS="/opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 if [ -f "$AUTOSUGGESTIONS" ]; then
     source "$AUTOSUGGESTIONS"
-
-    # gruvbox-material grey1
-    export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#928374"
 fi
 
 SYNTAX_HIGHLIGHTING="/opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
@@ -26,7 +23,7 @@ if command -v fzf &> /dev/null; then
   source <(fzf --zsh)
 fi
 
-export BAT_THEME=TwoDark
+export BAT_THEME=gruvbox-dark
 
 if command -v zoxide &> /dev/null; then
     eval "$(zoxide init zsh)"

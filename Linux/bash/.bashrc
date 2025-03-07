@@ -16,7 +16,7 @@ if command -v fzf &> /dev/null; then
   source <(fzf --bash)
 fi
 
-export BAT_THEME=TwoDark
+export BAT_THEME=gruvbox-dark
 
 if command -v zoxide &> /dev/null; then
     eval "$(zoxide init bash)"

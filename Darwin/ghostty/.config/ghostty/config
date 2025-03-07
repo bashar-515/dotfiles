@@ -30,7 +30,9 @@
 # theme = flexoki-dark
 # theme = Floraverse
 # theme = FrontEndDelight
-theme = gruvbox-material
+# theme = gruvbox-material
+theme = GruvboxDark
+# theme = GruvboxDarkHard
 # theme = Hardcore
 # theme = mellow
 # theme = Mirage
