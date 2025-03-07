@@ -31,3 +31,4 @@ curl -o "${DEST_FILE}" "${URL}"
 # wget
 # fzf
 # bat
+# git-delta
