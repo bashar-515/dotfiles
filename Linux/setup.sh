@@ -33,3 +33,4 @@ curl -o "${DEST_FILE}" "${URL}"
 # bat
 # git-delta
 # eza
+# zoxide
