@@ -32,3 +32,4 @@ curl -o "${DEST_FILE}" "${URL}"
 # fzf
 # bat
 # git-delta
+# eza
