@@ -21,3 +21,7 @@ ALIASES_PATH="$HOME/.aliases"
 if [ -e "$ALIASES_PATH" ]; then
     source "$ALIASES_PATH"
 fi
+
+if command -v fzf &> /dev/null; then
+  source <(fzf --zsh)
+fi

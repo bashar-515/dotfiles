@@ -21,3 +21,12 @@ if ! command -v curl >/dev/null 2>&1; then
 fi
 
 curl -o "${DEST_FILE}" "${URL}" 
+
+### Things to Install
+# stow
+# tmux
+# starship
+# neovim
+# ripgrep
+# wget
+# fzf
