@@ -9,6 +9,8 @@ return {
 
 				-- formatters
 				"stylua",
+
+				-- linters
 			},
 
 			auto_update = true,
