@@ -1,3 +1,5 @@
+To clone: `git clone --recursive git@github.com:bashar-515/dotfiles.git`.
+
 # dotfiles
 ## Before running the setup script, ensure that you have the proper dependencies installed! See below for details.
 #### setup.sh
