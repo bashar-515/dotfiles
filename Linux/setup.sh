@@ -1,3 +1,8 @@
+if ! command -v curl >/dev/null 2>&1; then
+    echo "Curl is not installed."
+    exit 1
+fi
+
 if ! command -v git >/dev/null 2>&1; then
     echo "Git is not installed."
     exit 1
@@ -14,11 +19,6 @@ GIT_COMPLETION_FILE="git-completion.bash"
 FILE_PATH="contrib/completion/$GIT_COMPLETION_FILE"
 URL="https://raw.githubusercontent.com/git/git/refs/tags/${TAG}/${FILE_PATH}"
 DEST_FILE=".$GIT_COMPLETION_FILE"
-
-if ! command -v curl >/dev/null 2>&1; then
-    echo "Curl is not installed."
-    exit 1
-fi
 
 curl -o "${DEST_FILE}" "${URL}" 
 
