@@ -1,10 +1,24 @@
 #!/bin/bash
 
-DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if ! command -v stow &> /dev/null; then
+    echo "GNU Stow is not installed."
+    exit 1
+fi
 
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 COMMON_DIR="$DOTFILES_DIR/common"
 OS_DIR="$DOTFILES_DIR/$(uname)"
 OS_SETUP_SCRIPT="$OS_DIR/setup.sh"
+
+if [[ ! -d "$COMMON_DIR" ]]; then
+    echo "$COMMON_DIR does not exist"
+    exit 1
+fi
+
+if [[ ! -d "$OS_DIR" ]]; then
+    echo "$OS_DIR does not exist"
+    exit 1
+fi
 
 stow_dotfiles() {
     # absolute path to either Linux, Darwin, or common directories
@@ -29,21 +43,6 @@ stow_dotfiles() {
         stow -d "$program_dir" -t "$HOME" "$dotfile"
     done
 }
-
-if ! command -v stow &> /dev/null; then
-    echo "GNU Stow is not installed."
-    exit 1
-fi
-
-if [[ ! -d "$COMMON_DIR" ]]; then
-    echo "$COMMON_DIR does not exist"
-    exit 1
-fi
-
-if [[ ! -d "$OS_DIR" ]]; then
-    echo "$OS_DIR does not exist"
-    exit 1
-fi
 
 stow_dotfiles "$COMMON_DIR"
 stow_dotfiles "$OS_DIR"
