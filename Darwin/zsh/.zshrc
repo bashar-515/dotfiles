@@ -4,11 +4,6 @@ fi
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-GIT_COMPLETION_SCRIPT="$HOME/.git-completion.zsh"
-if [[ -e "$GIT_COMPLETION_SCRIPT" ]]; then
-    source "$GIT_COMPLETION_SCRIPT"
-fi
-
 AUTOSUGGESTIONS="/opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 if [ -f "$AUTOSUGGESTIONS" ]; then
     source "$AUTOSUGGESTIONS"
@@ -33,3 +28,5 @@ export BAT_THEME=gruvbox-dark
 if command -v zoxide &> /dev/null; then
     eval "$(zoxide init zsh)"
 fi
+
+autoload -Uz compinit && compinit
