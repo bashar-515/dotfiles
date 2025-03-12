@@ -4,6 +4,11 @@ set -e
 
 HOME_DIR=$(realpath "$1")
 
+if [ ! -e "$HOME_DIR" ]; then
+  echo "$HOME_DIR does not exist." >&2
+  exit 1
+fi
+
 if ! apt-get --version > /dev/null 2>&1; then
     echo "Missing package manager."
     exit 1

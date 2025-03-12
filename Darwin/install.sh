@@ -4,6 +4,11 @@ set -e
 
 HOME_DIR=$(realpath "$1")
 
+if [ ! -e "$HOME_DIR" ]; then
+  echo "$HOME_DIR does not exist." >&2
+  exit 1
+fi
+
 if xcode-select -p &> /dev/null; then
     echo "Xcode Command Line Tools are installed."
 fi
