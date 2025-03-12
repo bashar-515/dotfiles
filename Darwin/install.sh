@@ -18,15 +18,15 @@ cd SCRIPT_DIR
 
 brew bundle
 
-# # set up Git completions
-# GIT_VERSION=$(git --version | awk '{print $3}')
-# if [[ -z "$GIT_VERSION" ]]; then
-#     echo "Unable to determine git version."
-#     exit 1
-# fi
-# TAG="v$GIT_VERSION"
-# GIT_COMPLETION_FILE="git-completion.zsh"
-# FILE_PATH="contrib/completion/$GIT_COMPLETION_FILE"
-# URL="https://raw.githubusercontent.com/git/git/refs/tags/${TAG}/${FILE_PATH}"
-# DEST_FILE="~/.$GIT_COMPLETION_FILE" # NOTE: here, we specify '$HOME'
-# curl -o "${DEST_FILE}" "${URL}"
+# set up Git completions
+GIT_VERSION=$(git --version | awk '{print $3}')
+if [[ -z "$GIT_VERSION" ]]; then
+    echo "Unable to determine git version."
+    exit 1
+fi
+TAG="v$GIT_VERSION"
+GIT_COMPLETION_FILE="git-completion.zsh"
+FILE_PATH="contrib/completion/$GIT_COMPLETION_FILE"
+URL="https://raw.githubusercontent.com/git/git/refs/tags/${TAG}/${FILE_PATH}"
+DEST_FILE="~/.$GIT_COMPLETION_FILE" # NOTE: here, we specify '$HOME'
+curl -o "${DEST_FILE}" "${URL}"

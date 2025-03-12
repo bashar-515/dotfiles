@@ -23,3 +23,7 @@ if command -v zoxide &> /dev/null; then
 fi
 
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
+# Use bash-completion, if available
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+    . /usr/share/bash-completion/bash_completion
