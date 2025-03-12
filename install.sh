@@ -2,6 +2,7 @@
 
 set -e
 
+HOME_DIR=$(realpath "$1")
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 OS_DIR="$DOTFILES_DIR/$(uname)"
 OS_INSTALL_SCRIPT="$OS_DIR/install.sh"
@@ -16,4 +17,4 @@ if [[ ! -e "$OS_INSTALL_SCRIPT" ]]; then
     exit 1
 fi
 
-bash "$OS_INSTALL_SCRIPT"
+bash "$OS_INSTALL_SCRIPT" "$HOME_DIR"

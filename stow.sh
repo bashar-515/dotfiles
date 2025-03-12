@@ -2,6 +2,7 @@
 
 set -e
 
+HOME_DIR=$(realpath "$1")
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 COMMON_DIR="$DOTFILES_DIR/common"
 OS_DIR="$DOTFILES_DIR/$(uname)"
@@ -15,7 +16,7 @@ stow_dotfiles() {
 
     for dotfile in $dotfiles; do
         for entry in "$program_dir/$dotfile"/{*,.[!.]*}; do
-            local path=$HOME/$(basename "$entry")
+            local path=$HOME_DIR/$(basename "$entry")
 
             if [[ -e "$path" ]]; then
                 mv "$path" "${path}.$(date -u +%Y%m%d%H%M%S).bak"
@@ -26,7 +27,7 @@ stow_dotfiles() {
 
     for dotfile in $dotfiles; do
         # e.g., stow -d ~/.files/common -t ~/. nvim
-        stow -d "$program_dir" -t "/home/bashar-dot" "$dotfile"
+        stow -d "$program_dir" -t "$HOME_DIR" "$dotfile"
     done
 }
 
