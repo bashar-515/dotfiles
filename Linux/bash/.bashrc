@@ -7,10 +7,6 @@ if [ -e "$ALIASES_PATH" ]; then
     source "$ALIASES_PATH"
 fi
 
-if command -v fzf &> /dev/null; then
-  source <(fzf --bash)
-fi
-
 export BAT_THEME=gruvbox-dark
 
 if command -v zoxide &> /dev/null; then
@@ -20,3 +16,5 @@ fi
 # Use bash-completion, if available
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
     . /usr/share/bash-completion/bash_completion
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

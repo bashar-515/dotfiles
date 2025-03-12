@@ -26,12 +26,15 @@ apt-get install -y \
     ripgrep \
     wget \
     bash-completion \
-    fzf \
     bat \
     git-delta \
     eza \
     zoxide \
     unzip
+
+# install fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git $HOME_DIR/.fzf && \
+    $HOME_DIR/.fzf/install --all --no-bash --no-fish --no-zsh
 
 # install prerequisites for building Neovim from source
 apt-get install -y \
