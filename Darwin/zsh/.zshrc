@@ -19,6 +19,11 @@ if [ -f "$SYNTAX_HIGHLIGHTING" ]; then
     source "$SYNTAX_HIGHLIGHTING"
 fi
 
+AUTOCOMPLETE="/opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh"
+if [ -f "$AUTOCOMPLETE" ]; then
+    source "$AUTOCOMPLETE"
+fi
+
 ALIASES_PATH="$HOME/.aliases"
 if [ -e "$ALIASES_PATH" ]; then
     source "$ALIASES_PATH"
