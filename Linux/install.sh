@@ -34,7 +34,8 @@ apt-get install -y \
 
 # install fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git $HOME_DIR/.fzf && \
-    $HOME_DIR/.fzf/install --all --no-update-rc --no-fish --no-zsh
+    $HOME_DIR/.fzf/install --key-bindings --completion --no-update-rc --no-fish --no-zsh
+mv ~/.fzf.bash $HOME_DIR/
 
 # install prerequisites for building Neovim from source
 apt-get install -y \
