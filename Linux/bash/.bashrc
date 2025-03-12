@@ -13,8 +13,9 @@ if command -v zoxide &> /dev/null; then
     eval "$(zoxide init bash)"
 fi
 
-# Use bash-completion, if available
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
     . /usr/share/bash-completion/bash_completion
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+if command -v fzf &> /dev/null; then
+  source <(fzf --bash)
+fi
