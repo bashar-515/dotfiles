@@ -2,6 +2,8 @@
 
 set -e
 
+HOME_DIR=$(realpath "$1")
+
 if ! apt-get --version > /dev/null 2>&1; then
     echo "Missing package manager."
     exit 1
@@ -33,25 +35,12 @@ apt-get install -y \
   cmake \
   file
 
-# set up Git completions
-# GIT_VERSION=$(git --version | awk '{print $3}')
-# if [[ -z "$GIT_VERSION" ]]; then
-#     echo "Unable to determine git version."
-#     exit 1
-# fi
-# TAG="v$GIT_VERSION"
-# GIT_COMPLETION_FILE="git-completion.bash"
-# FILE_PATH="contrib/completion/$GIT_COMPLETION_FILE"
-# URL="https://raw.githubusercontent.com/git/git/refs/tags/${TAG}/${FILE_PATH}"
-# DEST_FILE=".$GIT_COMPLETION_FILE" # NOTE: here, we dont' specify '$HOME'
-# curl -o "${DEST_FILE}" "${URL}" 
-
 # install Starship
 curl -sS https://starship.rs/install.sh | sh -s -- -y
 
 # build Neovim from source
-git clone https://github.com/neovim/neovim
-cd neovim
+git clone https://github.com/neovim/neovim $HOME_DIR/neovim
+cd $HOME_DIR/neovim
 git checkout stable
 make CMAKE_BUILD_TYPE=Release
-cd build && cpack -G DEB && dpkg -i nvim-linux-$(uname -m).deb
+cd build && cpack -G DEB && dpkg -i nvim-linux-$(uname -m | sed 's/aarch64/arm64/').deb
