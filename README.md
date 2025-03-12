@@ -1,16 +1,12 @@
 To clone, run `git clone --recursive git@github.com:bashar-515/dotfiles.git`.
 
 # dotfiles
-## Before running the setup script, ensure that you have the proper dependencies installed! See below for details.
-#### setup.sh
-1. From .
-```
-chmod +x script.sh
-```
-2. Run
-```
-./setup.sh
-```
+## Before running the scripts, ensure that you have the proper dependencies installed! See below for details.
+Once you have the requisite tools installed, you may proceed by first running 'install.sh', found in the top level of this repository.
+Then, you can run 'stow.sh' to ensure that the proper dot files are located in the correct folder. The installation script may require root
+access. 'stow.sh' will not, however both scripts expect to take in a directory as a parameter. The same directory should be passed to both,
+and it should be the home directory of the non-root user with which you will be using this setup. This design choice is to allow the
+installation script to be executed by 'USER root' when using Docker.
 
 ## Darwin
 ### Steps
@@ -19,21 +15,6 @@ chmod +x script.sh
 ```
 xcode-select --install
 ```
-2. Homebrew
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-Run the following command to make the brew command available in the current shell session.
-```
-eval "$(/opt/homebrew/bin/brew shellenv)"
-```
-3. To complete the process, run the following command while `cd`'ed into the 'common' subdirectory to install my preferred base tools,
-listed in the common/Brewfile
-```
-brew bundle
-```
-_Recap_ Download the Xcode command line tools; download Homebrew and ensure that its usable from within the shell session; run `brew
-bundle` from inside the 'common' subdirectory.
 
 #### Settings
 ##### System
@@ -55,11 +36,10 @@ bundle` from inside the 'common' subdirectory.
 ## Linux
 ### Steps 
 #### Requisite tools
-_Important!_ Before running the install script, ensure that _git_, _stow_, and _curl_ are installed on the system. These are **required**
-for 'setup.sh' to run correctly.
+Other that `apt`, there are none!
 
-Next, simply use your package manager to install neovim, tmux, and starship for my the base of my environment. Then the script can be
-executed!
+_The Linux installation script is meant specifically for setting up an Ubuntu Docker image. Other distributions will not work because the
+script relies on `apt`._
 
 ## TODO
 1. Configure Git and Docker completions (in zsh & bash). Git in Bash is done.
