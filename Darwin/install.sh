@@ -2,6 +2,8 @@
 
 set -e
 
+HOME_DIR=$(realpath "$1")
+
 if xcode-select -p &> /dev/null; then
     echo "Xcode Command Line Tools are installed."
 fi
@@ -28,5 +30,5 @@ TAG="v$GIT_VERSION"
 GIT_COMPLETION_FILE="git-completion.zsh"
 FILE_PATH="contrib/completion/$GIT_COMPLETION_FILE"
 URL="https://raw.githubusercontent.com/git/git/refs/tags/${TAG}/${FILE_PATH}"
-DEST_FILE="~/.$GIT_COMPLETION_FILE" # NOTE: here, we specify '$HOME'
+DEST_FILE="$HOME_DIR/.$GIT_COMPLETION_FILE"
 curl -o "${DEST_FILE}" "${URL}"
