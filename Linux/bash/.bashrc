@@ -16,6 +16,4 @@ fi
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
     . /usr/share/bash-completion/bash_completion
 
-if command -v fzf &> /dev/null; then
-  source <(fzf --bash)
-fi
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
