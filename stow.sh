@@ -9,6 +9,11 @@ if [ ! -e "$HOME_DIR" ]; then
   exit 1
 fi
 
+if ! stow --version > /dev/null 2>&1; then
+    echo "Stow is not installed."
+    exit 1
+fi
+
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 COMMON_DIR="$DOTFILES_DIR/common"
 OS_DIR="$DOTFILES_DIR/$(uname)"
@@ -36,6 +41,16 @@ stow_dotfiles() {
         stow -d "$program_dir" -t "$HOME_DIR" "$dotfile"
     done
 }
+
+if [ ! -e "$COMMON_DIR" ]; then
+  echo "$COMMON_DIR does not exist." >&2
+  exit 1
+fi
+
+if [ ! -e "$OS_DIR" ]; then
+  echo "$OS_DIR does not exist." >&2
+  exit 1
+fi
 
 stow_dotfiles "$COMMON_DIR"
 stow_dotfiles "$OS_DIR"
