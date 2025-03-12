@@ -40,7 +40,3 @@ Other that `apt`, there are none!
 
 _The Linux installation script is meant specifically for setting up an Ubuntu Docker image. Other distributions will not work because the
 script relies on `apt`._
-
-## TODO
-1. Configure Git and Docker completions (in zsh & bash). Git in Bash is done.
-2. Automate _everything_ so that no manual steps are necessary.
