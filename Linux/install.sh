@@ -26,7 +26,7 @@ apt-get install -y \
     ripgrep \
     wget \
     bash-completion \
-    bat \
+    bat \ # TODO: need to install this a different way
     git-delta \
     eza \
     zoxide \
