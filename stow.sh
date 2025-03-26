@@ -25,16 +25,16 @@ stow_dotfiles() {
     # names of directories in `program_dir`
     local dotfiles=$(ls -d "$program_dir"/*/ | xargs -n1 basename)
 
-    for dotfile in $dotfiles; do
-        for entry in "$program_dir/$dotfile"/{*,.[!.]*}; do
-            local path=$HOME_DIR/$(basename "$entry")
-
-            if [[ -e "$path" ]]; then
-                mv "$path" "${path}.$(date -u +%Y%m%d%H%M%S).bak"
-            fi
-        done
-    done
-
+    # TODO: deal with conflicts
+    # for dotfile in $dotfiles; do
+    #     for entry in "$program_dir/$dotfile"/{*,.[!.]*}; do
+    #         local path=$HOME_DIR/$(basename "$entry")
+    #
+    #         if [[ -e "$path" ]]; then
+    #             mv "$path" "${path}.$(date -u +%Y%m%d%H%M%S).bak"
+    #         fi
+    #     done
+    # done
 
     for dotfile in $dotfiles; do
         # e.g., stow -d ~/.files/common -t ~/. nvim
