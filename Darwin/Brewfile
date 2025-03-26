@@ -1,5 +1,3 @@
-cask_args appdir: "~/Applications"
-
 brew "stow"
 brew "tmux"
 brew "starship"
