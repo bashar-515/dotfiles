@@ -12,3 +12,8 @@ alias gh='cd ~/Developer/Git/Github'
 alias code='cd ~/Developer/Git/Github/Code'
 alias dot='cd ~/Developer/Git/Github/Code/dotfiles'
 alias pb='cd ~/Developer/Git/Github/Code/project-banana'
+
+# viam directories
+alias v='cd ~/Developer/Git/Github/Viam'
+alias vc='cd ~/Developer/Git/Github/Viam/Code'
+alias app='cd ~/Developer/Git/Github/Viam/Code/App/app'
