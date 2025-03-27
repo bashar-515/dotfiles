@@ -31,9 +31,8 @@ return {
 			},
 
 			filters = {
-				-- TODO: this is correctly causing '.git' to be ignore, but it's also unexpecedly causing '.gitconfig' in 'git'
-				-- to not show up. This might be a bug. '.gitignore' does also show up
-				custom = { ".git/" },
+				-- TODO: this still displays '.git' directory for some reason
+				custom = { "^%.git$" },
 			},
 		})
 
