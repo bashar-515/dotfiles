@@ -53,3 +53,6 @@ cd $HOME_DIR/neovim
 git checkout stable
 make CMAKE_BUILD_TYPE=Release
 cd build && cpack -G DEB && dpkg -i nvim-linux-$(uname -m | sed 's/aarch64/arm64/').deb
+
+# install nvm
+PROFILE=$HOME_DIR/.bashrc curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
