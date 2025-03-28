@@ -5,11 +5,11 @@ set -e
 HOME_DIR=$(realpath "$1")
 
 if [ ! -e "$HOME_DIR" ]; then
-  echo "$HOME_DIR does not exist." >&2
-  exit 1
+    echo "$HOME_DIR does not exist." >&2
+    exit 1
 fi
 
-if ! apt-get --version > /dev/null 2>&1; then
+if ! apt-get --version >/dev/null 2>&1; then
     echo "Missing package manager."
     exit 1
 fi
@@ -33,16 +33,16 @@ apt-get install -y \
     unzip
 
 # install fzf
-git clone --depth 1 https://github.com/junegunn/fzf.git $HOME_DIR/.fzf && \
+git clone --depth 1 https://github.com/junegunn/fzf.git $HOME_DIR/.fzf &&
     $HOME_DIR/.fzf/install --key-bindings --completion --no-update-rc --no-fish --no-zsh
 mv ~/.fzf.bash $HOME_DIR/
 
 # install prerequisites for building Neovim from source
 apt-get install -y \
-  ninja-build \
-  gettext \
-  cmake \
-  file
+    ninja-build \
+    gettext \
+    cmake \
+    file
 
 # install Starship
 curl -sS https://starship.rs/install.sh | sh -s -- -y

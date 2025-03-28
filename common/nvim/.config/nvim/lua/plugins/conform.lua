@@ -9,7 +9,7 @@ return {
 		conform.setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
-				bash = { "shfmt" },
+				sh = { "shfmt" },
 			},
 
 			default_format_opts = {

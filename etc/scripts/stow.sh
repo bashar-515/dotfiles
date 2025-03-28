@@ -5,11 +5,11 @@ set -e
 HOME_DIR=$(realpath "$1")
 
 if [ ! -e "$HOME_DIR" ]; then
-  echo "$HOME_DIR does not exist." >&2
-  exit 1
+    echo "$HOME_DIR does not exist." >&2
+    exit 1
 fi
 
-if ! stow --version > /dev/null 2>&1; then
+if ! stow --version >/dev/null 2>&1; then
     echo "Stow is not installed."
     exit 1
 fi
@@ -43,13 +43,13 @@ stow_dotfiles() {
 }
 
 if [ ! -e "$COMMON_DIR" ]; then
-  echo "$COMMON_DIR does not exist." >&2
-  exit 1
+    echo "$COMMON_DIR does not exist." >&2
+    exit 1
 fi
 
 if [ ! -e "$OS_DIR" ]; then
-  becho "$OS_DIR does not exist." >&2
-  exit 1
+    becho "$OS_DIR does not exist." >&2
+    exit 1
 fi
 
 stow_dotfiles "$COMMON_DIR"

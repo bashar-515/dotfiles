@@ -5,8 +5,8 @@ set -e
 HOME_DIR=$(realpath "$1")
 
 if [ ! -e "$HOME_DIR" ]; then
-  echo "$HOME_DIR does not exist." >&2
-  exit 1
+    echo "$HOME_DIR does not exist." >&2
+    exit 1
 fi
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
