@@ -8,6 +8,8 @@ return {
 			ensure_installed = {
 				-- only list LSP's!
 				"lua_ls", -- lua
+
+				-- TODO: install LSP for bash (requires npm)
 			},
 		})
 	end,
