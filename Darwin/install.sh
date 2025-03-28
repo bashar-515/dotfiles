@@ -17,6 +17,3 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 cd $SCRIPT_DIR
 
 brew bundle
-
-# install nvm
-PROFILE=~/.zshrc curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
