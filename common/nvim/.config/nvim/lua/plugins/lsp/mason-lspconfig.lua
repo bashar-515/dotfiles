@@ -7,7 +7,7 @@ return {
 
 			ensure_installed = {
 				-- only list LSP's!
-				"lua_ls",
+				"lua_ls", -- lua
 			},
 		})
 	end,

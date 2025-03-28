@@ -8,9 +8,11 @@ return {
 				-- use for formatters and linters [and DAP's]
 
 				-- formatters
-				"stylua",
+				"stylua", -- lua, luau
+				"shfmt", -- bash
 
 				-- linters
+				"shellcheck", -- bash
 			},
 
 			auto_update = true,
