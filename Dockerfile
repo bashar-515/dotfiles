@@ -16,4 +16,6 @@ USER $USERNAME
 
 RUN ./.files/etc/scripts/stow.sh .
 
+RUN nvm install node
+
 RUN nvim --headless "+Lazy! sync" +qa
