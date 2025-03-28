@@ -12,6 +12,7 @@ return {
 				"shfmt", -- bash
 
 				-- linters
+				"luacheck", -- lua
 				"shellcheck", -- bash
 			},
 
