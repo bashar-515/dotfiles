@@ -10,10 +10,10 @@ RUN rm .bashrc
 
 COPY . .files
 
-RUN ./.files/install.sh .
+RUN ./.files/etc/scripts/install.sh .
 
 USER $USERNAME
 
-RUN ./.files/stow.sh .
+RUN ./.files/etc/scripts/stow.sh .
 
 RUN nvim --headless "+Lazy! sync" +qa

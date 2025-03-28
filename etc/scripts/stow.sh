@@ -13,8 +13,8 @@ if ! stow --version > /dev/null 2>&1; then
     echo "Stow is not installed."
     exit 1
 fi
-
-DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DOTFILES_DIR="$(realpath "$SCRIPT_DIR/../../")"
 COMMON_DIR="$DOTFILES_DIR/common"
 OS_DIR="$DOTFILES_DIR/$(uname)"
 
