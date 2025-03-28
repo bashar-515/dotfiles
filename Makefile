@@ -1,4 +1,4 @@
--include .env
+-include etc/.env
 export
 
 .PHONY: build run
