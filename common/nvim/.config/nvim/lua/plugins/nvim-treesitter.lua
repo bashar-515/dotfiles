@@ -9,8 +9,8 @@ return {
 		local configs = require("nvim-treesitter.configs")
 
 		configs.setup({
-			-- the listed parsers MUST always be installed
 			ensure_installed = {
+				-- _must_ be installed
 				"c",
 				"lua",
 				"vim",
@@ -18,6 +18,9 @@ return {
 				"query",
 				"markdown",
 				"markdown_inline",
+
+				-- optional
+				"bash",
 			},
 
 			-- install parsers synchronously/sequentially (only applied to `ensure_installed`)

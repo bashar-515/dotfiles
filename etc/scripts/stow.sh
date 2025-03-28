@@ -48,7 +48,7 @@ if [ ! -e "$COMMON_DIR" ]; then
 fi
 
 if [ ! -e "$OS_DIR" ]; then
-  echo "$OS_DIR does not exist." >&2
+  becho "$OS_DIR does not exist." >&2
   exit 1
 fi
 
