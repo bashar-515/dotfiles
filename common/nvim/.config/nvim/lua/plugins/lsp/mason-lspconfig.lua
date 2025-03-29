@@ -3,15 +3,7 @@ return {
 	"williamboman/mason-lspconfig.nvim",
 
 	config = function()
-		require("mason-lspconfig").setup({
-
-			ensure_installed = {
-				-- only list LSP's!
-				"lua_ls", -- lua
-				"bashls", -- bash, csh, ksh, sh, zsh
-				"ts_ls", -- typescript, javascript
-			},
-		})
+		require("mason-lspconfig").setup({})
 	end,
 }
 

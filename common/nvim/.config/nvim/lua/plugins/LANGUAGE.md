@@ -6,9 +6,11 @@
 3. Similarly, add linters to `ensure_installed` in 'mason-tool-installer.lua' before specifying linters by
    file in 'nvim-lint.lua'
 4. Include language in `ensure_installed` in 'nvim-treesitter.nvim'
+5. Update Dockerfile to install relevant LSP's
 
 Formatters, Linters, and LSP's can be removed manually through Mason
 
 ### Languages _Fully_ Supported
+
 - Lua
 - Bash {TODO: configure LSP to recognize 'vim' as a global}

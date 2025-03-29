@@ -5,7 +5,15 @@ return {
 	config = function()
 		require("mason-tool-installer").setup({
 			ensure_installed = {
-				-- use for formatters and linters [and DAP's]
+				-- LSP's
+				-- lua
+				"lua_ls",
+
+				-- bash, csh, ksh, sh, zsh
+				"bashls",
+
+				-- typescript, javascript
+				"ts_ls",
 
 				-- formatters
 				-- lua, luau

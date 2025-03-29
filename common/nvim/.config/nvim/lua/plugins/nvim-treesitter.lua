@@ -30,7 +30,7 @@ return {
 			},
 
 			-- install parsers synchronously/sequentially (only applied to `ensure_installed`)
-			sync_install = false,
+			sync_install = true,
 
 			-- do not install automatically detected missing parser
 			auto_install = false,

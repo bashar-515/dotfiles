@@ -16,4 +16,6 @@ USER $USERNAME
 
 RUN .files/etc/scripts/stow.sh .
 
-RUN nvim --headless "+Lazy! sync" +qa
+RUN nvim --headless -c "Lazy! sync" -c qa
+
+RUN nvim --headless -c "MasonToolsInstallSync" -c qa
