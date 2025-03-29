@@ -26,6 +26,13 @@ return {
 		-- global mappings
 		local diagnostic = vim.diagnostic
 
+		-- TODO: not sure if this works/is doing anything
+		diagnostic.config({
+			float = {
+				source = true,
+			},
+		})
+
 		keymap.set("n", "<leader>d", diagnostic.open_float)
 		keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>")
 		keymap.set("n", "[d", diagnostic.goto_prev)
