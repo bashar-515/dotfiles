@@ -6,6 +6,8 @@ alias la='ls -la'
 
 alias cl='clear'
 
+alias tmux='tmux -2 -u'
+
 # directories
 alias g='cd ~/Developer/Git'
 alias gh='cd ~/Developer/Git/Github'
