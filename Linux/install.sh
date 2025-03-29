@@ -32,6 +32,7 @@ apt-get install -y \
     zoxide \
     unzip \
     nodejs \
+    npm \
     luarocks
 
 # install fzf
