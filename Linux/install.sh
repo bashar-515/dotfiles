@@ -30,7 +30,9 @@ apt-get install -y \
     git-delta \
     eza \
     zoxide \
-    unzip
+    unzip \
+    nodejs \
+    luarocks
 
 # install fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git $HOME_DIR/.fzf &&
