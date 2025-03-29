@@ -10,6 +10,21 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				sh = { "shfmt" },
+
+				angular = { "prettierd" },
+				css = { "prettierd" },
+				flow = { "prettierd" },
+				graphql = { "prettierd" },
+				html = { "prettierd" },
+				json = { "prettierd" },
+				jsx = { "prettierd" },
+				javascript = { "prettierd" },
+				less = { "prettierd" },
+				markdown = { "prettierd" },
+				scss = { "prettierd" },
+				typescript = { "prettierd" },
+				vue = { "prettierd" },
+				yaml = { "prettierd" },
 			},
 
 			default_format_opts = {

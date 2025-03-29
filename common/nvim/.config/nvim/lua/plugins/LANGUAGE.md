@@ -11,3 +11,4 @@ Formatters, Linters, and LSP's can be removed manually through Mason
 
 ### Languages _Fully_ Supported
 - Lua
+- Bash {TODO: configure LSP to recognize 'vim' as a global}

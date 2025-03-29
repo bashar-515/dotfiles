@@ -8,12 +8,27 @@ return {
 				-- use for formatters and linters [and DAP's]
 
 				-- formatters
-				"stylua", -- lua, luau
-				"shfmt", -- bash
+				-- lua, luau
+				"stylua",
+
+				-- bash
+				"shfmt",
+
+				-- angular, css, flow, graphql, html, json, jsx, javascript, less, markdown, scss, typescript, vue, yaml
+				"prettierd",
 
 				-- linters
-				"luacheck", -- lua
-				"shellcheck", -- bash
+				-- lua
+				"luacheck",
+
+				-- bash
+				"shellcheck",
+
+				-- typescript, javascript
+				"eslint_d",
+
+				-- makefile
+				"checkmake",
 			},
 
 			auto_update = true,

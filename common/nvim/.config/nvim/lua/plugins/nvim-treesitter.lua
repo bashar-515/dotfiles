@@ -21,6 +21,12 @@ return {
 
 				-- optional
 				"bash",
+				"javascript",
+				"typescript",
+				"json",
+				"dockerfile",
+				"make",
+				"gitignore",
 			},
 
 			-- install parsers synchronously/sequentially (only applied to `ensure_installed`)
