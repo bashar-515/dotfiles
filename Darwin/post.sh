@@ -10,4 +10,4 @@ if [ ! -e "$HOME_DIR" ]; then
 fi
 
 # install nvm
-PROFILE=$HOME_DIR/.zshrc curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
+PROFILE=/dev/null bash -c 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash'
