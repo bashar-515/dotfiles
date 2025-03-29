@@ -11,7 +11,6 @@ return {
 			sh = { "shellcheck" },
 			javascript = { "eslint_d" },
 			typescript = { "eslint_d" },
-			make = { "checkmake" },
 		}
 
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })

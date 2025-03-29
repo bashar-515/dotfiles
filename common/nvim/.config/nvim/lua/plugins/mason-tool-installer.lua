@@ -26,9 +26,6 @@ return {
 
 				-- typescript, javascript
 				"eslint_d",
-
-				-- makefile
-				"checkmake",
 			},
 
 			auto_update = true,
