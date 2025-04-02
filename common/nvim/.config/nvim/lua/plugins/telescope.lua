@@ -24,6 +24,8 @@ return {
 						"--no-ignore",
 						"--iglob",
 						"!.git",
+						"--iglob",
+						"!node_modules",
 					},
 				},
 			},
@@ -43,6 +45,8 @@ return {
 					"--no-ignore",
 					"--glob",
 					"!{**/.git/*}",
+					"--glob",
+					"!{**/node_modules/*}",
 				},
 
 				mappings = {

@@ -31,7 +31,8 @@ return {
 			},
 
 			filters = {
-				custom = { "^%.git$", "node_modules" },
+				-- TODO: this still displays '.git' directory for some reason
+				custom = { ".git$" },
 			},
 		})
 
